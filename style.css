@@ -199,3 +199,53 @@ footer {
 }
 
 footer a { color: var(--holz-hell); }
+
+/* Testseite: nummerierte Schritte mit Knopf, QR-Code zum Weitergeben */
+.schritte {
+  padding-left: 1.4em;
+  margin: 0 0 1.5em;
+}
+
+.schritte li {
+  margin-bottom: 1.4em;
+  padding-left: 0.3em;
+}
+
+.schritte li::marker {
+  font: 700 1.2rem var(--font-titel);
+  color: var(--filz);
+}
+
+.schritte strong { display: block; }
+
+.schritte .kontakt {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  max-width: 320px;
+}
+
+.qr {
+  display: block;
+  width: 220px;
+  height: 220px;
+  margin: 8px auto 4px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.qr-adresse {
+  text-align: center;
+  color: var(--tinte-leise);
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .schritte li::marker { color: var(--gold); }
+}
+
+@media print {
+  body { background: #fff; }
+  nav, footer { display: none; }
+  main { margin: 0; }
+}
