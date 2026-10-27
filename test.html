@@ -28,35 +28,48 @@
   </nav>
 
   <main>
-    <div class="kurz">
-      <p>
-        Danke, dass du hilfst! Damit die App in den Play Store darf, verlangt Google einen geschlossenen Test: Mindestens
-        12 Personen müssen <strong>14 Tage lang</strong> als Tester angemeldet bleiben. Du brauchst ein Android-Gerät
-        und ein Google-Konto – die App ist gratis, ohne Werbung und ohne Konto.
-      </p>
+    <!-- Hinweis für iPhone/iPad und Computer, wird per Skript eingeblendet -->
+    <div class="geraet-hinweis" id="hinweis-ios" hidden>
+      <strong>Du bist auf einem iPhone oder iPad.</strong>
+      Dieser Test ist nur für Android. Für iPhone und iPad gibt es einen Test über TestFlight –
+      <a href="mailto:michi.zihlmann@gmx.net?subject=Chasch%20jasse%3F!%20%E2%80%93%20TestFlight">schreib mir</a>,
+      dann lade ich dich ein.
+    </div>
+    <div class="geraet-hinweis" id="hinweis-computer" hidden>
+      <strong>Am einfachsten auf dem Android-Handy:</strong> Code mit der Kamera scannen und dort weitermachen.
+      <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
     </div>
 
-    <h2>In drei Schritten dabei</h2>
-    <p>Öffne diese Seite auf deinem Android-Gerät und verwende überall dasselbe Google-Konto wie im Play Store.</p>
+    <p class="einstieg">Drei Tipper, dann bist du dabei. Gratis, ohne Werbung, ohne Konto.</p>
 
-    <ol class="schritte">
-      <li>
-        <strong>Der Testgruppe beitreten.</strong>
-        Tippe auf «Gruppe beitreten». Die anderen Mitglieder siehst du nicht, und du bekommst keine Mails.
-        <a class="kontakt" href="https://groups.google.com/g/chaschjasse-test">Zur Testgruppe</a>
+    <ol class="schritte" id="schritte">
+      <li data-schritt="1">
+        <strong>Der Testgruppe beitreten</strong>
+        <span class="text">
+          Auf der Google-Seite «Gruppe beitreten» tippen – manchmal fragt Google ein zweites Mal, dann nochmals
+          bestätigen. Du bekommst keine Mails.
+        </span>
+        <a class="kontakt" href="https://groups.google.com/g/chaschjasse-test" target="_blank" rel="noopener">Gruppe beitreten</a>
       </li>
-      <li>
-        <strong>Als Tester anmelden.</strong>
-        Tippe auf der Seite von Google Play auf «Tester werden».
-        <a class="kontakt" href="https://play.google.com/apps/testing/ch.chaschjasse.app">Tester werden</a>
+      <li data-schritt="2">
+        <strong>Als Tester anmelden</strong>
+        <span class="text">Auf der Seite von Google Play «Tester werden» tippen.</span>
+        <a class="kontakt" href="https://play.google.com/apps/testing/ch.chaschjasse.app" target="_blank" rel="noopener">Tester werden</a>
       </li>
-      <li>
-        <strong>App installieren.</strong>
-        Nach der Anmeldung kann es ein paar Minuten dauern, bis die App erscheint. In der Suche im Play Store taucht
-        sie noch nicht auf – nimm diesen Link.
-        <a class="kontakt" href="https://play.google.com/store/apps/details?id=ch.chaschjasse.app">App im Play Store</a>
+      <li data-schritt="3">
+        <strong>App installieren</strong>
+        <span class="text">
+          Im Play Store «Installieren» tippen. Erscheint die App noch nicht, ein paar Minuten warten und nochmals
+          versuchen – über die Suche findest du sie noch nicht.
+        </span>
+        <a class="kontakt" href="https://play.google.com/store/apps/details?id=ch.chaschjasse.app" target="_blank" rel="noopener">App installieren</a>
       </li>
     </ol>
+
+    <div class="fertig" id="fertig" hidden>
+      <strong>Merci, du bist dabei!</strong>
+      Bitte die App 14 Tage lang nicht deinstallieren und ab und zu eine Partie spielen.
+    </div>
 
     <h2>Und dann?</h2>
     <ul>
@@ -85,6 +98,13 @@
       </p>
     </details>
     <details>
+      <summary>Warum so umständlich?</summary>
+      <p>
+        Damit die App in den Play Store darf, verlangt Google einen geschlossenen Test: Mindestens 12 Personen müssen
+        14 Tage lang als Tester angemeldet bleiben. Die drei Schritte schreibt Google vor.
+      </p>
+    </details>
+    <details>
       <summary>Welche Daten sehe ich als Entwickler?</summary>
       <p>
         Die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe) und Rückmeldungen, die du selbst sendest.
@@ -101,5 +121,72 @@
   <footer>
     © 2026 Michael Zihlmann · <a href="./">Support</a> · <a href="datenschutz.html">Datenschutzerklärung</a>
   </footer>
+
+  <script>
+    // Assistent: immer nur der aktuelle Schritt hat einen Knopf. Wer aus dem Google-Tab zurückkommt, sieht den nächsten.
+    // Ohne Skript bleibt die normale Liste mit allen drei Knöpfen stehen.
+    (function () {
+      var ua = navigator.userAgent;
+      var istAndroid = /Android/i.test(ua);
+      var istIos = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (istIos) document.getElementById('hinweis-ios').hidden = false;
+      else if (!istAndroid) document.getElementById('hinweis-computer').hidden = false;
+
+      var SCHLUESSEL = 'chaschjasse-test-schritt';
+      var liste = document.getElementById('schritte');
+      var schritte = liste.querySelectorAll('li');
+      var fertig = document.getElementById('fertig');
+      var aktuell = 1;
+      var unterwegs = 0;
+
+      try { aktuell = Math.min(4, Math.max(1, parseInt(localStorage.getItem(SCHLUESSEL), 10) || 1)); } catch (e) {}
+
+      function zeige() {
+        schritte.forEach(function (li) {
+          var nr = Number(li.dataset.schritt);
+          li.classList.toggle('erledigt', nr < aktuell);
+          li.classList.toggle('aktiv', nr === aktuell);
+          li.classList.toggle('spaeter', nr > aktuell);
+        });
+        fertig.hidden = aktuell <= 3;
+        try { localStorage.setItem(SCHLUESSEL, String(aktuell)); } catch (e) {}
+      }
+
+      function gehe(nr) {
+        aktuell = nr;
+        unterwegs = 0;
+        zeige();
+      }
+
+      schritte.forEach(function (li) {
+        var nr = Number(li.dataset.schritt);
+        li.querySelector('.kontakt').addEventListener('click', function () { unterwegs = nr; });
+
+        var steuerung = document.createElement('div');
+        steuerung.className = 'steuerung';
+        var weiter = document.createElement('button');
+        weiter.type = 'button';
+        weiter.textContent = 'Schon erledigt – weiter';
+        weiter.addEventListener('click', function () { gehe(nr + 1); });
+        steuerung.appendChild(weiter);
+        li.appendChild(steuerung);
+
+        var nochmals = document.createElement('button');
+        nochmals.type = 'button';
+        nochmals.className = 'nochmals';
+        nochmals.textContent = 'nochmals';
+        nochmals.addEventListener('click', function () { gehe(nr); });
+        li.querySelector('strong').appendChild(nochmals);
+      });
+
+      // Zurück aus dem Google-Tab oder dem Play Store: Schritt gilt als erledigt.
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible' && unterwegs === aktuell) gehe(aktuell + 1);
+      });
+
+      liste.classList.add('assistent');
+      zeige();
+    })();
+  </script>
 </body>
 </html>

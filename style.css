@@ -240,8 +240,92 @@ footer a { color: var(--holz-hell); }
   font-size: 0.9rem;
 }
 
+.schritte .text { display: block; }
+
+.einstieg {
+  font: 700 1.25rem/1.35 var(--font-titel);
+  margin-bottom: 1em;
+}
+
+/* Assistent (per Skript): nur der aktuelle Schritt zeigt Text und Knopf, die anderen nur ihren Titel */
+.steuerung, .nochmals { display: none; }
+
+.schritte.assistent li { transition: opacity 0.2s; }
+
+.schritte.assistent li.erledigt,
+.schritte.assistent li.spaeter { margin-bottom: 0.6em; }
+
+.schritte.assistent li.erledigt .text,
+.schritte.assistent li.erledigt .kontakt,
+.schritte.assistent li.spaeter .text,
+.schritte.assistent li.spaeter .kontakt { display: none; }
+
+.schritte.assistent li.spaeter { opacity: 0.45; }
+
+.schritte.assistent li.erledigt strong { color: var(--tinte-leise); }
+
+.schritte.assistent li.erledigt strong::before { content: '✓ '; color: var(--filz); }
+
+.schritte.assistent li.erledigt .nochmals { display: inline; }
+
+.schritte.assistent li.aktiv {
+  background: color-mix(in srgb, var(--filz) 12%, transparent);
+  border-radius: 10px;
+  padding: 12px 14px 14px;
+  margin-left: -0.2em;
+}
+
+.schritte.assistent li.aktiv strong { font-size: 1.1rem; }
+
+.schritte.assistent li.aktiv .kontakt {
+  max-width: none;
+  min-height: 56px;
+  font-size: 1.1rem;
+}
+
+.schritte.assistent li.aktiv .steuerung {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.steuerung button, .nochmals {
+  background: none;
+  border: none;
+  font: inherit;
+  color: var(--tinte-leise);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.steuerung button { min-height: 44px; font-size: 0.9rem; }
+
+.nochmals { font-size: 0.85rem; font-weight: 400; margin-left: 6px; padding: 4px; }
+
+.fertig {
+  background: color-mix(in srgb, var(--messing) 22%, transparent);
+  border-left: 4px solid var(--messing);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 1.5em;
+}
+
+.fertig strong { display: block; font: 700 1.2rem/1.3 var(--font-titel); }
+
+.geraet-hinweis {
+  background: color-mix(in srgb, var(--messing) 22%, transparent);
+  border-left: 4px solid var(--messing);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 1.5em;
+}
+
+.geraet-hinweis strong { display: block; }
+
 @media (prefers-color-scheme: dark) {
   .schritte li::marker { color: var(--gold); }
+  .schritte.assistent li.erledigt strong::before { color: var(--gold); }
 }
 
 @media print {
