@@ -333,3 +333,6 @@ footer a { color: var(--holz-hell); }
   nav, footer { display: none; }
   main { margin: 0; }
 }
+
+/* Testseite: Teile für Android und iPhone, auf dem Computer beide untereinander */
+.geraet:not([hidden]) + .geraet { margin-top: 2.5em; }

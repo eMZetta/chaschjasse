@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Chasch Jasse? Hesch Gäud?! – Testen</title>
-  <meta name="description" content="So machst du beim geschlossenen Test der Android-App «Chasch Jasse? Hesch Gäud?!» mit – in drei Schritten.">
+  <meta name="description" content="Teste die Jass-App «Chasch Jasse? Hesch Gäud?!» vor dem Start – auf Android oder iPhone, gratis, ohne Werbung, ohne Konto.">
   <meta name="theme-color" content="#2f5d4a">
+  <!-- Vorschau beim Teilen (WhatsApp, Signal, Mail) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://emzetta.github.io/chaschjasse/test.html">
+  <meta property="og:title" content="Chasch Jasse? Hesch Gäud?! – jetzt testen">
+  <meta property="og:description" content="Teste die neue Jass-App vor dem Start – Android oder iPhone, gratis, ohne Werbung, ohne Konto.">
+  <meta property="og:image" content="https://emzetta.github.io/chaschjasse/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:locale" content="de_CH">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
@@ -15,8 +24,8 @@
     <div class="kopf-inhalt">
       <img src="icon.png" alt="" width="72" height="72">
       <div>
-        <h1>Mitteste!</h1>
-        <p class="unterzeile">Chasch Jasse? Hesch Gäud?! für Android</p>
+        <h1>Chasch Jasse?</h1>
+        <p class="unterzeile">Hesch Gäud?!</p>
       </div>
     </div>
   </header>
@@ -28,92 +37,113 @@
   </nav>
 
   <main>
-    <!-- Hinweis für iPhone/iPad und Computer, wird per Skript eingeblendet -->
-    <div class="geraet-hinweis" id="hinweis-ios" hidden>
-      <strong>Du bist auf einem iPhone oder iPad.</strong>
-      Dieser Test ist nur für Android. Für iPhone und iPad gibt es einen Test über TestFlight –
-      <a href="mailto:michi.zihlmann@gmx.net?subject=Chasch%20jasse%3F!%20%E2%80%93%20TestFlight">schreib mir</a>,
-      dann lade ich dich ein.
-    </div>
+    <!-- Hinweis für Computer, wird per Skript eingeblendet -->
     <div class="geraet-hinweis" id="hinweis-computer" hidden>
-      <strong>Am einfachsten auf dem Android-Handy:</strong> Code mit der Kamera scannen und dort weitermachen.
+      <strong>Am einfachsten auf dem Handy:</strong> Code mit der Kamera scannen und dort weitermachen.
       <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
     </div>
 
-    <p class="einstieg">Drei Tipper, dann bist du dabei. Gratis, ohne Werbung, ohne Konto.</p>
+    <!-- Android und iPhone: das Skript blendet den Teil für das andere Gerät aus -->
+    <section class="geraet" id="android">
+      <h2>Android</h2>
+      <p class="einstieg">Drei Tipper, dann bist du dabei. Gratis, ohne Werbung, ohne Konto.</p>
 
-    <ol class="schritte" id="schritte">
-      <li data-schritt="1">
-        <strong>Der Testgruppe beitreten</strong>
-        <span class="text">
-          Auf der Google-Seite «Gruppe beitreten» tippen – manchmal fragt Google ein zweites Mal, dann nochmals
-          bestätigen. Du bekommst keine Mails.
-        </span>
-        <a class="kontakt" href="https://groups.google.com/g/chaschjasse-test" target="_blank" rel="noopener">Gruppe beitreten</a>
-      </li>
-      <li data-schritt="2">
-        <strong>Als Tester anmelden</strong>
-        <span class="text">Auf der Seite von Google Play «Tester werden» tippen.</span>
-        <a class="kontakt" href="https://play.google.com/apps/testing/ch.chaschjasse.app" target="_blank" rel="noopener">Tester werden</a>
-      </li>
-      <li data-schritt="3">
-        <strong>App installieren</strong>
-        <span class="text">
-          Im Play Store «Installieren» tippen. Erscheint die App noch nicht, ein paar Minuten warten und nochmals
-          versuchen – über die Suche findest du sie noch nicht.
-        </span>
-        <a class="kontakt" href="https://play.google.com/store/apps/details?id=ch.chaschjasse.app" target="_blank" rel="noopener">App installieren</a>
-      </li>
-    </ol>
+      <ol class="schritte" data-assistent="chaschjasse-test-schritt">
+        <li data-schritt="1">
+          <strong>Der Testgruppe beitreten</strong>
+          <span class="text">
+            Auf der Google-Seite «Gruppe beitreten» tippen – manchmal fragt Google ein zweites Mal, dann nochmals
+            bestätigen. Du bekommst keine Mails.
+          </span>
+          <a class="kontakt" href="https://groups.google.com/g/chaschjasse-test" target="_blank" rel="noopener">Gruppe beitreten</a>
+        </li>
+        <li data-schritt="2">
+          <strong>Als Tester anmelden</strong>
+          <span class="text">Auf der Seite von Google Play «Tester werden» tippen.</span>
+          <a class="kontakt" href="https://play.google.com/apps/testing/ch.chaschjasse.app" target="_blank" rel="noopener">Tester werden</a>
+        </li>
+        <li data-schritt="3">
+          <strong>App installieren</strong>
+          <span class="text">
+            Im Play Store «Installieren» tippen. Erscheint die App noch nicht, ein paar Minuten warten und nochmals
+            versuchen – über die Suche findest du sie noch nicht.
+          </span>
+          <a class="kontakt" href="https://play.google.com/store/apps/details?id=ch.chaschjasse.app" target="_blank" rel="noopener">App installieren</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="geraet" id="ios">
+      <h2>iPhone und iPad</h2>
+      <p class="einstieg">Zwei Tipper, dann bist du dabei. Gratis, ohne Werbung, ohne Konto.</p>
+
+      <ol class="schritte" data-assistent="chaschjasse-test-schritt-ios">
+        <li data-schritt="1">
+          <strong>TestFlight laden</strong>
+          <span class="text">
+            Testversionen laufen über Apples App «TestFlight». Im App Store «Laden» tippen. Hast du TestFlight schon,
+            geht es mit «Schon erledigt – weiter» direkt zum nächsten Schritt.
+          </span>
+          <a class="kontakt" href="https://apps.apple.com/app/testflight/id899247664" target="_blank" rel="noopener">TestFlight laden</a>
+        </li>
+        <li data-schritt="2">
+          <strong>Am Test teilnehmen</strong>
+          <span class="text">In TestFlight «Akzeptieren» und dann «Installieren» tippen.</span>
+          <a class="kontakt" href="https://testflight.apple.com/join/d4GzuGqu" target="_blank" rel="noopener">Am Test teilnehmen</a>
+        </li>
+      </ol>
+    </section>
 
     <div class="fertig" id="fertig" hidden>
       <strong>Merci, du bist dabei!</strong>
-      Bitte die App 14 Tage lang nicht deinstallieren und ab und zu eine Partie spielen.
+      Bitte die App 14 Tage lang nicht löschen und ab und zu eine Partie spielen.
     </div>
 
     <h2>Und dann?</h2>
     <ul>
       <li>Spiel ab und zu eine Partie – auch eine kurze hilft.</li>
-      <li><strong>Bleib angemeldet</strong> und deinstalliere die App während der 14 Tage nicht. Updates kommen automatisch über den Play Store.</li>
+      <li><strong>Bleib dabei</strong> und lösche die App während der 14 Tage nicht. Updates kommen automatisch über den Play Store bzw. TestFlight.</li>
       <li>
-        Fehler, Ideen oder Lob? Schreib mir an
+        Fehler oder Ideen? Schreib mir an
         <a href="mailto:michi.zihlmann@gmx.net?subject=Chasch%20jasse%3F!%20%E2%80%93%20Test">michi.zihlmann@gmx.net</a>
-        oder nutze im Play Store «Feedback an Entwickler senden».
+        oder nutze «Feedback an Entwickler senden» im Play Store bzw. «Feedback senden» in TestFlight.
       </li>
     </ul>
 
     <h2>Klappt etwas nicht?</h2>
     <details>
-      <summary>«Tester werden» zeigt einen Fehler oder die App ist nicht verfügbar.</summary>
+      <summary>Android: «Tester werden» zeigt einen Fehler oder die App ist nicht verfügbar.</summary>
       <p>
         Meist bist du in Schritt 1 und 2 mit verschiedenen Google-Konten angemeldet. Prüfe oben rechts im Browser bzw.
         im Play Store, welches Konto aktiv ist, und wiederhole die Schritte mit demselben Konto.
       </p>
     </details>
     <details>
-      <summary>Ich habe ein iPhone oder iPad.</summary>
+      <summary>iPhone: Der Link öffnet nur eine Webseite.</summary>
       <p>
-        Dieser Test ist nur für Android. Für iPhone und iPad gibt es einen Test über TestFlight – schreib mir, dann
-        lade ich dich ein.
+        Dann fehlt noch TestFlight. Lade die App «TestFlight» aus dem App Store und tippe danach nochmals auf
+        <a href="https://testflight.apple.com/join/d4GzuGqu">testflight.apple.com/join/d4GzuGqu</a>.
       </p>
     </details>
     <details>
       <summary>Warum so umständlich?</summary>
       <p>
-        Damit die App in den Play Store darf, verlangt Google einen geschlossenen Test: Mindestens 12 Personen müssen
-        14 Tage lang als Tester angemeldet bleiben. Die drei Schritte schreibt Google vor.
+        Damit die App in die Stores darf, braucht es einen Test: Bei Google müssen mindestens 12 Personen 14 Tage lang
+        als Tester angemeldet bleiben, bei Apple laufen Testversionen nur über TestFlight. Die Schritte schreiben Google
+        und Apple vor.
       </p>
     </details>
     <details>
       <summary>Welche Daten sehe ich als Entwickler?</summary>
       <p>
-        Die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe) und Rückmeldungen, die du selbst sendest.
-        Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+        Bei Android die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe), bei TestFlight die Angaben,
+        die Apple an Entwickler weitergibt, sowie Rückmeldungen, die du selbst sendest. Mehr dazu in der
+        <a href="datenschutz.html">Datenschutzerklärung</a>.
       </p>
     </details>
 
     <h2>Weitersagen</h2>
-    <p>Kennst du jemanden mit Android, der gern jasst? Diesen Code scannen lassen:</p>
+    <p>Kennst du jemanden, der gern jasst? Link schicken oder diesen Code scannen lassen – er passt für Android und iPhone:</p>
     <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
     <p class="qr-adresse">emzetta.github.io/chaschjasse/test.html</p>
   </main>
@@ -123,69 +153,76 @@
   </footer>
 
   <script>
-    // Assistent: immer nur der aktuelle Schritt hat einen Knopf. Wer aus dem Google-Tab zurückkommt, sieht den nächsten.
-    // Ohne Skript bleibt die normale Liste mit allen drei Knöpfen stehen.
+    // Zeigt nur den Teil für das eigene Gerät. Jede Liste ist ein Assistent: Immer nur der aktuelle Schritt hat einen
+    // Knopf, wer aus Google, dem Play Store oder TestFlight zurückkommt, sieht den nächsten.
+    // Ohne Skript bleiben beide Teile mit allen Knöpfen stehen.
     (function () {
       var ua = navigator.userAgent;
       var istAndroid = /Android/i.test(ua);
       var istIos = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-      if (istIos) document.getElementById('hinweis-ios').hidden = false;
-      else if (!istAndroid) document.getElementById('hinweis-computer').hidden = false;
+      if (istAndroid) document.getElementById('ios').hidden = true;
+      else if (istIos) document.getElementById('android').hidden = true;
+      else document.getElementById('hinweis-computer').hidden = false;
 
-      var SCHLUESSEL = 'chaschjasse-test-schritt';
-      var liste = document.getElementById('schritte');
-      var schritte = liste.querySelectorAll('li');
       var fertig = document.getElementById('fertig');
-      var aktuell = 1;
-      var unterwegs = 0;
 
-      try { aktuell = Math.min(4, Math.max(1, parseInt(localStorage.getItem(SCHLUESSEL), 10) || 1)); } catch (e) {}
+      document.querySelectorAll('[data-assistent]').forEach(function (liste) {
+        if (liste.closest('[hidden]')) return;
+        var schluessel = liste.dataset.assistent;
+        var schritte = liste.querySelectorAll('li');
+        var letzter = schritte.length;
+        var aktuell = 1;
+        var unterwegs = 0;
 
-      function zeige() {
+        try { aktuell = Math.min(letzter + 1, Math.max(1, parseInt(localStorage.getItem(schluessel), 10) || 1)); } catch (e) {}
+
+        function zeige() {
+          schritte.forEach(function (li) {
+            var nr = Number(li.dataset.schritt);
+            li.classList.toggle('erledigt', nr < aktuell);
+            li.classList.toggle('aktiv', nr === aktuell);
+            li.classList.toggle('spaeter', nr > aktuell);
+          });
+          // Auf dem Computer sind beide Teile sichtbar, dort gibt es kein «Fertig».
+          if (istAndroid || istIos) fertig.hidden = aktuell <= letzter;
+          try { localStorage.setItem(schluessel, String(aktuell)); } catch (e) {}
+        }
+
+        function gehe(nr) {
+          aktuell = nr;
+          unterwegs = 0;
+          zeige();
+        }
+
         schritte.forEach(function (li) {
           var nr = Number(li.dataset.schritt);
-          li.classList.toggle('erledigt', nr < aktuell);
-          li.classList.toggle('aktiv', nr === aktuell);
-          li.classList.toggle('spaeter', nr > aktuell);
+          li.querySelector('.kontakt').addEventListener('click', function () { unterwegs = nr; });
+
+          var steuerung = document.createElement('div');
+          steuerung.className = 'steuerung';
+          var weiter = document.createElement('button');
+          weiter.type = 'button';
+          weiter.textContent = 'Schon erledigt – weiter';
+          weiter.addEventListener('click', function () { gehe(nr + 1); });
+          steuerung.appendChild(weiter);
+          li.appendChild(steuerung);
+
+          var nochmals = document.createElement('button');
+          nochmals.type = 'button';
+          nochmals.className = 'nochmals';
+          nochmals.textContent = 'nochmals';
+          nochmals.addEventListener('click', function () { gehe(nr); });
+          li.querySelector('strong').appendChild(nochmals);
         });
-        fertig.hidden = aktuell <= 3;
-        try { localStorage.setItem(SCHLUESSEL, String(aktuell)); } catch (e) {}
-      }
 
-      function gehe(nr) {
-        aktuell = nr;
-        unterwegs = 0;
+        // Zurück aus dem anderen Tab oder der App: Schritt gilt als erledigt.
+        document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState === 'visible' && unterwegs === aktuell) gehe(aktuell + 1);
+        });
+
+        liste.classList.add('assistent');
         zeige();
-      }
-
-      schritte.forEach(function (li) {
-        var nr = Number(li.dataset.schritt);
-        li.querySelector('.kontakt').addEventListener('click', function () { unterwegs = nr; });
-
-        var steuerung = document.createElement('div');
-        steuerung.className = 'steuerung';
-        var weiter = document.createElement('button');
-        weiter.type = 'button';
-        weiter.textContent = 'Schon erledigt – weiter';
-        weiter.addEventListener('click', function () { gehe(nr + 1); });
-        steuerung.appendChild(weiter);
-        li.appendChild(steuerung);
-
-        var nochmals = document.createElement('button');
-        nochmals.type = 'button';
-        nochmals.className = 'nochmals';
-        nochmals.textContent = 'nochmals';
-        nochmals.addEventListener('click', function () { gehe(nr); });
-        li.querySelector('strong').appendChild(nochmals);
       });
-
-      // Zurück aus dem Google-Tab oder dem Play Store: Schritt gilt als erledigt.
-      document.addEventListener('visibilitychange', function () {
-        if (document.visibilityState === 'visible' && unterwegs === aktuell) gehe(aktuell + 1);
-      });
-
-      liste.classList.add('assistent');
-      zeige();
     })();
   </script>
 </body>
