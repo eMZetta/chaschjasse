@@ -338,3 +338,26 @@ footer a { color: var(--holz-hell); }
 .geraet:not([hidden]) + .geraet { margin-top: 2.5em; }
 
 .werbung { color: var(--tinte-leise); margin-bottom: 1.5em; }
+
+/* Testseite, nur Computer: Bilder der App nebeneinander */
+.bildstreifen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 1.5em;
+}
+
+.bildstreifen img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 30%);
+}
+
+@media (max-width: 560px) {
+  .bildstreifen { grid-template-columns: repeat(2, 1fr); }
+}
+
+.geraet-hinweis .flyer { display: flex; justify-content: center; max-width: 260px; margin: 12px auto 0; }
+
+#handy-infos > h2:first-child { margin-top: 2em; }

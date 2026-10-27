@@ -37,16 +37,25 @@
   </nav>
 
   <main>
-    <!-- Hinweis für Computer, wird per Skript eingeblendet -->
-    <div class="geraet-hinweis" id="hinweis-computer" hidden>
-      <strong>Am einfachsten auf dem Handy:</strong> Code mit der Kamera scannen und dort weitermachen.
-      <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
-    </div>
-
     <p class="werbung">
       Gratis, ohne Werbung und ohne Konto. Schieber, Coiffeur, Differenzler und vieles mehr. Online mit Freunden oder
       gegen den Computer (ohne Internetverbindung spielbar).
     </p>
+
+    <!-- Nur auf dem Computer (per Skript eingeblendet): Bilder der App, QR-Code fürs Handy und Flyer -->
+    <section id="computer" hidden>
+      <div class="bildstreifen">
+        <img src="bilder/hauptmenue.webp" alt="Hauptmenü in der Jassstube" width="180" height="320" loading="lazy">
+        <img src="bilder/schieber.webp" alt="Schieber am Jasstisch" width="180" height="320" loading="lazy">
+        <img src="bilder/abenteuer.webp" alt="Abenteuer: Abend auf der Alp" width="180" height="320" loading="lazy">
+        <img src="bilder/spielarten.webp" alt="Auswahl der Spielarten" width="180" height="320" loading="lazy">
+      </div>
+      <div class="geraet-hinweis">
+        <strong>Am einfachsten auf dem Handy:</strong> Code mit der Kamera scannen und dort weitermachen.
+        <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
+        <a class="kontakt flyer" href="aushang.pdf" download>Flyer als PDF (A4)</a>
+      </div>
+    </section>
 
     <!-- Android und iPhone: das Skript blendet den Teil für das andere Gerät aus -->
     <section class="geraet" id="android">
@@ -104,53 +113,57 @@
       Bitte die App 14 Tage lang nicht löschen und ab und zu eine Partie spielen.
     </div>
 
-    <h2>Und dann?</h2>
-    <ul>
-      <li>Spiel ab und zu eine Partie – auch eine kurze hilft.</li>
-      <li><strong>Bleib dabei</strong> und lösche die App während der 14 Tage nicht. Updates kommen automatisch über den Play Store bzw. TestFlight.</li>
-      <li>
-        Fehler oder Ideen? Schreib mir an
-        <a href="mailto:michi.zihlmann@gmx.net?subject=Chasch%20jasse%3F!%20%E2%80%93%20Test">michi.zihlmann@gmx.net</a>
-        oder nutze «Feedback an Entwickler senden» im Play Store bzw. «Feedback senden» in TestFlight.
-      </li>
-    </ul>
+    <!-- Anleitung und Hilfe nur auf dem Handy; am Computer reichen Bilder und QR-Code -->
+    <div id="handy-infos">
+      <h2>Und dann?</h2>
+      <ul>
+        <li>Spiel ab und zu eine Partie – auch eine kurze hilft.</li>
+        <li><strong>Bleib dabei</strong> und lösche die App während der 14 Tage nicht. Updates kommen automatisch über den Play Store bzw. TestFlight.</li>
+        <li>
+          Fehler oder Ideen? Schreib mir an
+          <a href="mailto:michi.zihlmann@gmx.net?subject=Chasch%20jasse%3F!%20%E2%80%93%20Test">michi.zihlmann@gmx.net</a>
+          oder nutze «Feedback an Entwickler senden» im Play Store bzw. «Feedback senden» in TestFlight.
+        </li>
+      </ul>
 
-    <h2>Klappt etwas nicht?</h2>
-    <details>
-      <summary>Android: «Tester werden» zeigt einen Fehler oder die App ist nicht verfügbar.</summary>
-      <p>
-        Meist bist du in Schritt 1 und 2 mit verschiedenen Google-Konten angemeldet. Prüfe oben rechts im Browser bzw.
-        im Play Store, welches Konto aktiv ist, und wiederhole die Schritte mit demselben Konto.
-      </p>
-    </details>
-    <details>
-      <summary>iPhone: Der Link öffnet nur eine Webseite.</summary>
-      <p>
-        Dann fehlt noch TestFlight. Lade die App «TestFlight» aus dem App Store und tippe danach nochmals auf
-        <a href="https://testflight.apple.com/join/d4GzuGqu">testflight.apple.com/join/d4GzuGqu</a>.
-      </p>
-    </details>
-    <details>
-      <summary>Warum so umständlich?</summary>
-      <p>
-        Damit die App in die Stores darf, braucht es einen Test: Bei Google müssen mindestens 12 Personen 14 Tage lang
-        als Tester angemeldet bleiben, bei Apple laufen Testversionen nur über TestFlight. Die Schritte schreiben Google
-        und Apple vor.
-      </p>
-    </details>
-    <details>
-      <summary>Welche Daten sehe ich als Entwickler?</summary>
-      <p>
-        Bei Android die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe), bei TestFlight die Angaben,
-        die Apple an Entwickler weitergibt, sowie Rückmeldungen, die du selbst sendest. Mehr dazu in der
-        <a href="datenschutz.html">Datenschutzerklärung</a>.
-      </p>
-    </details>
+      <h2>Klappt etwas nicht?</h2>
+      <details>
+        <summary>Android: «Tester werden» zeigt einen Fehler oder die App ist nicht verfügbar.</summary>
+        <p>
+          Meist bist du in Schritt 1 und 2 mit verschiedenen Google-Konten angemeldet. Prüfe oben rechts im Browser bzw.
+          im Play Store, welches Konto aktiv ist, und wiederhole die Schritte mit demselben Konto.
+        </p>
+      </details>
+      <details>
+        <summary>iPhone: Der Link öffnet nur eine Webseite.</summary>
+        <p>
+          Dann fehlt noch TestFlight. Lade die App «TestFlight» aus dem App Store und tippe danach nochmals auf
+          <a href="https://testflight.apple.com/join/d4GzuGqu">testflight.apple.com/join/d4GzuGqu</a>.
+        </p>
+      </details>
+      <details>
+        <summary>Warum so umständlich?</summary>
+        <p>
+          Damit die App in die Stores darf, braucht es einen Test: Bei Google müssen mindestens 12 Personen 14 Tage lang
+          als Tester angemeldet bleiben, bei Apple laufen Testversionen nur über TestFlight. Die Schritte schreiben Google
+          und Apple vor.
+        </p>
+      </details>
+      <details>
+        <summary>Welche Daten sehe ich als Entwickler?</summary>
+        <p>
+          Bei Android die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe), bei TestFlight die Angaben,
+          die Apple an Entwickler weitergibt, sowie Rückmeldungen, die du selbst sendest. Mehr dazu in der
+          <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+      </details>
 
-    <h2>Weitersagen</h2>
-    <p>Kennst du jemanden, der gern jasst? Link schicken oder diesen Code scannen lassen – er passt für Android und iPhone:</p>
-    <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
-    <p class="qr-adresse">emzetta.github.io/chaschjasse/test.html</p>
+      <h2>Weitersagen</h2>
+      <p>Kennst du jemanden, der gern jasst? Link schicken oder diesen Code scannen lassen – er passt für Android und iPhone:</p>
+      <img class="qr" src="test-qr.svg" alt="QR-Code zu emzetta.github.io/chaschjasse/test.html" width="220" height="220">
+      <p class="qr-adresse">emzetta.github.io/chaschjasse/test.html</p>
+      <p class="qr-adresse"><a href="aushang.pdf" download>Flyer zum Ausdrucken (PDF, A4)</a></p>
+    </div>
   </main>
 
   <footer>
@@ -167,7 +180,10 @@
       var istIos = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
       if (istAndroid) document.getElementById('ios').hidden = true;
       else if (istIos) document.getElementById('android').hidden = true;
-      else document.getElementById('hinweis-computer').hidden = false;
+      else {
+        document.getElementById('computer').hidden = false;
+        ['android', 'ios', 'handy-infos'].forEach(function (id) { document.getElementById(id).hidden = true; });
+      }
 
       var fertig = document.getElementById('fertig');
 
