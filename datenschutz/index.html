@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Chasch Jasse? Hesch Gäud?! – Datenschutz</title>
-  <meta name="description" content="Datenschutzerklärung der App «Chasch Jasse? Hesch Gäud?!»: Die App funktioniert ohne Internet. Nur der Online-Jass überträgt Spielername, Spielfigur und Spielzüge an den Spielserver.">
+  <meta name="description" content="Datenschutzerklärung der App «Chasch Jasse? Hesch Gäud?!»: Die App funktioniert ohne Internet. Nur der Online-Jass überträgt Spielername, Spielfigur und Spielzüge an den Spielserver; dauerhaft gespeichert wird nur die Online-Rangliste.">
   <meta name="theme-color" content="#2f5d4a">
   <link rel="icon" href="../icon.png">
   <link rel="apple-touch-icon" href="../icon.png">
@@ -13,10 +13,13 @@
 <body>
   <header class="kopf">
     <div class="kopf-inhalt">
-      <img src="../icon.webp" alt="" width="72" height="72">
-      <div>
-        <h1>Datenschutz&shy;erklärung</h1>
-        <p class="unterzeile">Chasch Jasse? Hesch Gäud?!</p>
+      <picture class="logo">
+        <source media="(min-width: 600px)" srcset="../logo-quer.webp" width="1200" height="709">
+        <img src="../logo-hoch.webp" alt="Chasch Jasse? Hesch Gäud?!" width="840" height="714">
+      </picture>
+      <div class="titelzeile">
+        <img class="app-icon" src="../icon.webp" alt="" width="52" height="52">
+        <h1 class="titel">Datenschutz&shy;erklärung</h1>
       </div>
     </div>
   </header>
@@ -35,18 +38,23 @@
         keine Werbung, kein Tracking und keine Analyse-Werkzeuge. Was du in der App eingibst und erspielst, bleibt auf
         deinem Smartphone oder Tablet. Einzige Ausnahme ist der <strong>Online-Jass</strong>: Spielst du mit anderen über das
         Internet, gehen dein Spielername, deine Spielfigur und deine Spielzüge an den Spielserver, damit deine
-        Mitspieler sie sehen. Gespeichert wird dort nichts dauerhaft.
+        Mitspieler sie sehen. Dauerhaft gespeichert wird dort nur dein Eintrag in der Online-Rangliste (Spielername,
+        Spielfigur und Wertung, ohne echten Namen und ohne Konto).
       </p>
     </div>
 
     <h2>Verantwortlich</h2>
     <p>
-      Michael Zihlmann, Schweiz<br>
-      E-Mail: <a href="mailto:info@chaschjasse.ch">info@chaschjasse.ch</a>
+      Michael Zihlmann<br>
+      Riffigstrasse 15<br>
+      6020 Emmenbrücke<br>
+      Schweiz<br>
+      E-Mail: <a href="mailto:kontakt@chaschjasse.ch">kontakt@chaschjasse.ch</a>
     </p>
     <p>
       Diese Erklärung gilt für die App «Chasch Jasse? Hesch Gäud?!» für iOS, iPadOS und Android sowie für diese Webseite
-      chaschjasse.ch. Sie richtet sich nach dem Schweizer
+      chaschjasse.ch. Für die Web-Version des Spiels im Browser gilt die
+      <a href="../datenschutz-web/">Datenschutzerklärung der Web-Version</a>. Sie richtet sich nach dem Schweizer
       Datenschutzgesetz (DSG) und – für Nutzerinnen und Nutzer in der EU – nach der Datenschutz-Grundverordnung (DSGVO).
     </p>
 
@@ -66,6 +74,7 @@
     <ul>
       <li>der Spielername, den du dafür eingibst (du musst keinen echten Namen verwenden), und die gewählte Spielfigur,</li>
       <li>der Raumcode, ein zufälliges Kennzeichen für deinen Platz am Tisch und deine Spielzüge,</li>
+      <li>eine zufällige Geräte-ID, die die App beim ersten Online-Jass erzeugt (für die Rangliste, siehe unten),</li>
       <li>technisch bedingt deine IP-Adresse, ohne die keine Verbindung möglich ist.</li>
     </ul>
     <p>
@@ -73,14 +82,40 @@
       Spielfigur und deine ausgespielten Karten. Rechtsgrundlage ist die Erfüllung deines Wunsches, online zu spielen
       (Art. 6 Abs. 1 lit. b DSGVO). Die Raumdaten liegen nur im Arbeitsspeicher des Servers, werden nicht in einer
       Datenbank abgelegt und nach spätestens sechs Stunden ohne Aktivität gelöscht, bei einem Neustart des Servers
-      sofort. Der Spielserver protokolliert deine IP-Adresse nicht. Namen, die beleidigend sind, weist der Server ab.
+      sofort. Namen, die beleidigend sind, weist der Server ab.
     </p>
     <p>
-      Der Spielserver läuft bei <strong>Render</strong> (Render Services, Inc., San Francisco, USA) als
-      Auftragsbearbeiter; der Server steht in Frankfurt am Main (Deutschland). Render kann für den Betrieb kurzzeitig technische Verbindungsdaten wie die IP-Adresse
+      Deine IP-Adresse speichert der Spielserver weder in einer Datenbank noch in seinem Protokoll. Um Missbrauch
+      abzuwehren (z. B. massenhaftes Anlegen von Räumen oder Durchprobieren von Raumcodes), zählt er nur im
+      Arbeitsspeicher mit, wie viele Anfragen von einer IP-Adresse kommen; dieser Zähler verfällt nach wenigen Minuten
+      ohne Anfrage. Rechtsgrundlage ist mein berechtigtes Interesse an einem stabilen Spielserver (Art. 6 Abs. 1 lit. f DSGVO).
+    </p>
+    <p>
+      Spielserver und Datenbank der Rangliste laufen bei <strong>Render</strong> (Render Services, Inc., San Francisco, USA)
+      als Auftragsbearbeiter; die Server stehen in Frankfurt am Main (Deutschland). Render kann für den Betrieb kurzzeitig technische Verbindungsdaten wie die IP-Adresse
       protokollieren. Eine Bekanntgabe in die USA erfolgt gestützt auf die Standardvertragsklauseln der
       EU-Kommission im Auftragsverarbeitungsvertrag von Render; es gilt zudem die
       <a href="https://render.com/privacy" rel="noopener">Datenschutzerklärung von Render</a>.
+    </p>
+
+    <h2>Online-Rangliste</h2>
+    <p>
+      Gewertete Online-Partien fliessen in eine Rangliste. Dafür speichere ich dauerhaft je Geräte-ID: den zuletzt
+      verwendeten Spielernamen, die Spielfigur und je Spielart deine Wertung, Bestwertung, Anzahl gespielter, gewonnener,
+      verlorener und unentschiedener Partien sowie die Ergebnisse der letzten fünf Partien. Spielername, Spielfigur,
+      Wertung und Partienzahlen sind für alle sichtbar, die die Rangliste öffnen. Die Geräte-ID selbst wird nicht angezeigt;
+      sie ist zufällig und hängt nicht mit deinem Gerät, deinem Namen oder einem Konto zusammen.
+    </p>
+    <p>
+      Zweck ist die Rangliste als Teil des Online-Jass (Art. 6 Abs. 1 lit. b DSGVO). Der Eintrag bleibt gespeichert,
+      solange es die Rangliste gibt, oder bis du mich um Löschung bittest; nenne mir dazu deinen Spielernamen in der
+      Rangliste und ungefähr, wann du zuletzt gespielt hast. Löschst du die App, bleibt der Eintrag bestehen, lässt sich
+      von dir aber nicht mehr weiterführen.
+    </p>
+    <p>
+      Ausserdem zähle ich anonym, wie viele Online-Partien welcher Spielart gespielt werden, wie lange sie dauern und
+      wie sie enden (fertig gespielt, abgebrochen, Sitz von der KI übernommen). Diese Zählung enthält keine Namen,
+      Geräte-IDs, Raumcodes oder IP-Adressen und lässt sich keiner Person zuordnen.
     </p>
 
     <h2>Daten, die nur auf deinem Gerät gespeichert werden</h2>
@@ -147,8 +182,8 @@
     <p>
       Bietet die App freiwillige In-App-Käufe an (zum Beispiel einen Beitrag, um die Entwicklung zu unterstützen),
       wickeln Apple bzw. Google die Zahlung vollständig in eigener Verantwortung ab. Ich erhalte keine Zahlungsangaben,
-      keinen Namen und keine E-Mail-Adresse, sondern nur zusammengefasste Verkaufszahlen. Auf deinem Gerät merkt sich die
-      App höchstens, ob ein Kauf abgeschlossen ist.
+      keinen Namen und keine E-Mail-Adresse, sondern nur zusammengefasste Verkaufszahlen. Die App merkt sich keinen Kauf
+      und schaltet dafür nichts frei.
     </p>
 
     <h2>Wenn du mir schreibst</h2>
@@ -169,17 +204,16 @@
 
     <h2>Kinder</h2>
     <p>
-      Die App fragt nicht nach dem Alter und erhebt keine Personendaten über das hinaus, was oben zum Online-Jass
-      beschrieben ist – auch nicht von Kindern. Für den Online-Jass genügt ein Fantasiename.
+      Die App fragt nicht nach dem Alter und erhebt keine Personendaten über das hinaus, was oben zum Online-Jass und
+      zur Rangliste beschrieben ist – auch nicht von Kindern. Für den Online-Jass genügt ein Fantasiename.
     </p>
 
     <h2>Deine Rechte</h2>
     <p>
       Du hast das Recht auf Auskunft, Berichtigung und Löschung deiner Personendaten sowie – nach DSGVO – auf
-      Einschränkung der Bearbeitung, Datenübertragbarkeit und Widerspruch. Die Daten des Online-Jass sind nach
-      spätestens sechs Stunden gelöscht und lassen sich ohne Konto keiner Person zuordnen; in der Regel betrifft dies
-      daher nur E-Mails, die du mir geschickt hast. Wende dich dafür an die oben
-      genannte Adresse. Du kannst dich ausserdem beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten
+      Einschränkung der Bearbeitung, Datenübertragbarkeit und Widerspruch. Die Raumdaten des Online-Jass sind nach
+      spätestens sechs Stunden gelöscht. Dauerhaft gespeichert sind nur dein Eintrag in der Rangliste und E-Mails, die
+      du mir geschickt hast. Wende dich dafür an die oben genannte Adresse. Du kannst dich ausserdem beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten
       (EDÖB) bzw. bei der Aufsichtsbehörde deines Wohnsitzlandes beschweren.
     </p>
 

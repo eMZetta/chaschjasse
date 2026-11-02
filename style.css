@@ -58,7 +58,7 @@ body {
 .kopf {
   background: var(--filz);
   color: var(--kreide);
-  padding: max(28px, env(safe-area-inset-top)) 16px 32px;
+  padding: max(20px, env(safe-area-inset-top)) 16px 22px;
   border-bottom: 6px solid var(--messing);
 }
 
@@ -66,27 +66,56 @@ body {
   max-width: 720px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
-.kopf img {
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
+/* Das Logo aus der App (StubeLogo.vue, mit Band): schmal zweizeilig, ab 600 px einzeilig */
+.kopf .logo {
+  display: block;
+  width: min(100%, 270px);
+}
+
+.kopf .logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgb(0 0 0 / 35%));
+}
+
+@media (min-width: 600px) {
+  .kopf .logo {
+    width: min(100%, 520px);
+  }
+}
+
+/* Darunter das App-Icon als Wiedererkennung (wie auf dem Home-Bildschirm) und der Titel der Seite */
+.titelzeile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 35%);
   flex: none;
 }
 
-.kopf h1 {
+.kopf h1.titel,
+.kopf .titel {
   margin: 0;
-  font: 700 1.9rem/1.15 var(--font-titel);
+  font: 700 clamp(1.25rem, 5.4vw, 1.6rem)/1.15 var(--font-titel);
+  text-wrap: balance;
 }
 
-.kopf .unterzeile {
-  margin: 2px 0 0;
-  font: 600 1.35rem/1.2 var(--font-kreide);
-  color: var(--holz-hell);
+/* Startseite: das Logo selbst ist die Hauptüberschrift */
+.kopf .logo-titel {
+  margin: 0;
+  display: contents;
 }
 
 nav {
