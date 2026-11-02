@@ -361,3 +361,7 @@ footer a { color: var(--holz-hell); }
 .geraet-hinweis .flyer { display: flex; justify-content: center; max-width: 260px; margin: 12px auto 0; }
 
 #handy-infos > h2:first-child { margin-top: 2em; }
+
+/* Startseite: Merkmale der App */
+.merkmale { padding-left: 1.2em; margin-bottom: 1.5em; }
+.merkmale li { margin-bottom: 0.6em; }
