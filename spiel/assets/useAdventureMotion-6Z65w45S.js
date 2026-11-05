@@ -1,1 +1,0 @@
-import{U as e}from"./variantGroups-DL4cK5Db.js";import{r as t}from"./effects-DRV-1GOZ.js";function n(){let n=t();n.setInAdventure(!0),e(()=>n.setInAdventure(!1))}export{n as t};

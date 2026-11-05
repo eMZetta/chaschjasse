@@ -1,1 +1,0 @@
-import{U as e,_t as t,st as n}from"./variantGroups-DL4cK5Db.js";import{i as r}from"./adventureAudio-DlFlDAKt.js";function i(i=!0){let a=null,o=(e=1.2)=>{a?.stop(e),a=null};n(()=>!!t(i),e=>{e&&!a?a=r(`alp-ambience`,{gain:.15,loop:!0,fadeIn:2}):e||o()},{immediate:!0}),e(()=>o(.6))}export{i as t};
