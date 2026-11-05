@@ -178,6 +178,15 @@ nav a {
 
 nav a:hover { background: linear-gradient(#7a5636, #55391f); }
 
+/* «Im Browser spielen» hebt sich als roter Knopf ab, wie der Hauptknopf der App */
+nav a.spielen {
+  background: linear-gradient(var(--rot-hell), var(--rot) 55%, var(--rot-kante));
+  color: var(--kreide);
+  text-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+}
+
+nav a.spielen:hover { background: linear-gradient(#e24841, var(--rot-hell) 55%, var(--rot)); }
+
 nav a[aria-current='page'] {
   background: var(--gold);
   border-color: var(--messing);

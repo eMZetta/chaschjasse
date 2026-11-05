@@ -8,6 +8,11 @@
   <meta name="theme-color" content="#2f5d4a">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
+  <!-- Smart App Banner von Safari (iPhone/iPad): zeigt oben «Laden» bzw. «Öffnen», wenn die App installiert ist.
+       Sobald die App im App Store ist, die Apple-ID (App Store Connect → App-Informationen) hier und unten in APP_STORE_ID
+       eintragen und den Kommentar entfernen:
+  <meta name="apple-itunes-app" content="app-id=APPLE-ID">
+  -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,6 +33,7 @@
 
   <nav aria-label="Seiten">
     <a href="./" aria-current="page">Start</a>
+    <a class="spielen" href="spiel/">Im Browser spielen</a>
     <a href="support/">Support</a>
     <a href="datenschutz/">Datenschutz</a>
     <a href="test.html">Testen</a>
@@ -39,6 +45,13 @@
       <strong>Du hast ein Android-Handy?</strong>
       Die App ist für Android noch im Test – mach mit und spiel schon jetzt.
       <a class="kontakt flyer" href="test.html">Jetzt testen</a>
+    </div>
+
+    <!-- Nur auf iPhone und iPad: zur App im App Store (dort «Laden» oder «Öffnen»), bis dahin zum Test über TestFlight -->
+    <div class="geraet-hinweis" id="ios-app" hidden>
+      <strong>Du hast ein iPhone oder iPad?</strong>
+      <span id="ios-app-text">Die App ist noch im Test – mit TestFlight spielst du schon jetzt.</span>
+      <a class="kontakt flyer" id="ios-app-link" href="test.html">Jetzt testen</a>
     </div>
 
     <p class="einstieg">Der Schweizer Jass für Smartphone und Tablet – gegen den Computer oder online mit deinen Freunden.</p>
@@ -58,6 +71,13 @@
       <li><strong>Ohne Werbung, ohne Konto:</strong> alles ausser dem Online-Jass läuft auch im Flugmodus.</li>
     </ul>
 
+    <h2>Im Browser spielen</h2>
+    <p>
+      Kein Handy zur Hand? Das ganze Spiel läuft auch im Browser, am Computer wie auf dem Tablet – ohne Installation und
+      ohne Konto. Dein Spielstand bleibt im Browser.
+    </p>
+    <p><a class="kontakt" href="spiel/">Jetzt im Browser spielen</a></p>
+
     <h2>App laden</h2>
     <p>
       Bald im App Store und bei Google Play. Bis dahin kannst du die App schon
@@ -71,6 +91,20 @@
 
   <script>
     if (/Android/i.test(navigator.userAgent)) document.getElementById('android-test').hidden = false;
+
+    // Apple-ID der App aus App Store Connect, sobald sie im App Store ist (dann auch das Smart App Banner oben einschalten)
+    var APP_STORE_ID = '';
+    // iPadOS meldet sich wie ein Mac, verrät sich aber über den Touchscreen
+    var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+    if (ios) {
+      if (APP_STORE_ID) {
+        document.getElementById('ios-app-text').textContent = 'Hol dir die App im App Store – oder öffne sie, wenn du sie schon hast.';
+        var link = document.getElementById('ios-app-link');
+        link.href = 'https://apps.apple.com/ch/app/id' + APP_STORE_ID;
+        link.textContent = 'Im App Store öffnen';
+      }
+      document.getElementById('ios-app').hidden = false;
+    }
   </script>
 </body>
 </html>
