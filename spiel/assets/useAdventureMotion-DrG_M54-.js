@@ -1,0 +1,1 @@
+import{U as e}from"./variantGroups-Bjh1aexB.js";import{r as t}from"./effects-BAh6R3x9.js";function n(){let n=t();n.setInAdventure(!0),e(()=>n.setInAdventure(!1))}export{n as t};

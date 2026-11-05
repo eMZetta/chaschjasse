@@ -1,0 +1,1 @@
+import{U as e,ht as t}from"./variantGroups-Bjh1aexB.js";import{s as n}from"./uiSounds-BhM8LkV8.js";function r(){let r=t(!1),i=0;function a(){n(),r.value=!1,clearTimeout(i),requestAnimationFrame(()=>{r.value=!0,i=setTimeout(()=>r.value=!1,260)})}return e(()=>clearTimeout(i)),{released:r,release:a}}export{r as t};
