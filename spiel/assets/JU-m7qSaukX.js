@@ -1,0 +1,1 @@
+var e=`/spiel/assets/JU-Dks_2aHA.webp`;export{e as default};

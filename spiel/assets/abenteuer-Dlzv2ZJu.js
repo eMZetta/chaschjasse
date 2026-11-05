@@ -1,0 +1,1 @@
+var e=`/spiel/assets/abenteuer-paSomgzF.webp`;export{e as default};

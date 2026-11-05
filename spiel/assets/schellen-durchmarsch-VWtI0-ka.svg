@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Durchmarsch" (Schellenjass) -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#fff1b0"/><stop offset="0.45" stop-color="#e6b23a"/><stop offset="1" stop-color="#8a5a12"/></radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#2f7a46"/><stop offset="1" stop-color="#123b22"/></radialGradient>
+    <radialGradient id="bell" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff6c8"/><stop offset="0.5" stop-color="#e8b830"/><stop offset="1" stop-color="#9a6510"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="0.55" stop-color="#d79a22"/><stop offset="1" stop-color="#9a6510"/></linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+  <g transform="translate(78 88) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(128 88) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(178 88) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(78 134) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(128 134) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(178 134) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(78 180) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(128 180) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+  <g transform="translate(178 180) scale(0.46)" stroke="#3a2410" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="0" cy="-34" r="6" fill="none"/><circle r="30" cy="0" fill="url(#bell)"/><path d="M-30 6 H30" fill="none"/><circle cx="0" cy="6" r="5" fill="#3a2410"/><path d="M-18 -16 Q-10 -24 0 -24" stroke="#fffbe6" stroke-width="3" fill="none"/></g>
+</svg>

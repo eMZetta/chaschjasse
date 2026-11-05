@@ -1,0 +1,1 @@
+var e=`/spiel/assets/AI-DcQv050X.webp`;export{e as default};

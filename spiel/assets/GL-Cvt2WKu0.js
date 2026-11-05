@@ -1,0 +1,1 @@
+var e=`/spiel/assets/GL-6sPFO6gC.webp`;export{e as default};

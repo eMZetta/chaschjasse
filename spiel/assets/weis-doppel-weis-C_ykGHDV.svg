@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Doppel-Weis" (zwei Weis ueber 100 Punkte): zwei Kartenfaecher und zwei Weis-Banner -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#ebe0c6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2452f"/>
+      <stop offset="1" stop-color="#9c2414"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- zwei kleine Kartenfaecher -->
+  <g>
+    <g transform="rotate(-18 88 118)">
+      <rect x="74" y="62" width="28" height="42" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="88.0" y="89.5" font-size="18" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">A</text>
+      <text x="83" y="77" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">A</text>
+    </g>
+    <g>
+      <rect x="74" y="62" width="28" height="42" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="88.0" y="89.5" font-size="18" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">K</text>
+      <text x="83" y="77" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">K</text>
+    </g>
+    <g transform="rotate(18 88 118)">
+      <rect x="74" y="62" width="28" height="42" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="88.0" y="89.5" font-size="18" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">O</text>
+      <text x="83" y="77" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">O</text>
+    </g>
+    <g transform="rotate(-18 168 118)">
+      <rect x="154" y="62" width="28" height="42" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="168.0" y="88.4" font-size="15" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">10</text>
+      <text x="163" y="77" font-size="11" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">10</text>
+    </g>
+    <g>
+      <rect x="154" y="62" width="28" height="42" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="168.0" y="88.4" font-size="15" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">9</text>
+      <text x="163" y="77" font-size="11" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">9</text>
+    </g>
+    <g transform="rotate(18 168 118)">
+      <rect x="154" y="62" width="28" height="42" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="168.0" y="88.4" font-size="15" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">8</text>
+      <text x="163" y="77" font-size="11" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">8</text>
+    </g>
+  </g>
+
+  <!-- zwei Weis-Banner -->
+  <g transform="rotate(-5 128 138)">
+    <path d="M52.0 128.0 H74.0 V160.0 H52.0 L61.0 144.0Z" fill="#7a1a0e"/>
+    <path d="M204.0 128.0 H182.0 V160.0 H204.0 L195.0 144.0Z" fill="#7a1a0e"/>
+    <rect x="66.0" y="122.0" width="124" height="32" rx="3" fill="url(#ribbon)" stroke="#5a1408" stroke-width="2"/>
+    <text x="128" y="144.8" font-size="19" fill="#fff3d0" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">WEIS 100</text>
+  </g>
+  <g transform="rotate(5 128 180)">
+    <path d="M52.0 170.0 H74.0 V202.0 H52.0 L61.0 186.0Z" fill="#7a1a0e"/>
+    <path d="M204.0 170.0 H182.0 V202.0 H204.0 L195.0 186.0Z" fill="#7a1a0e"/>
+    <rect x="66.0" y="164.0" width="124" height="32" rx="3" fill="url(#gold)" stroke="#5a1408" stroke-width="2"/>
+    <text x="128" y="186.8" font-size="19" fill="#5a3a0c" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">WEIS 100</text>
+  </g>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

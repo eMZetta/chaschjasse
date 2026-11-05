@@ -1,0 +1,1 @@
+var e=`/spiel/assets/NE-DBrKwEnT.webp`;export{e as default};

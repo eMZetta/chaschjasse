@@ -1,0 +1,15 @@
+# SPA-Fallback fuer vue-router (createWebHistory): unbekannte Pfade auf index.html umleiten
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Textdateien komprimiert ausliefern - v.a. die SVG-Karten (Bildkarten ~450 KB, gzip ~100 KB).
+# Ohne mod_deflate wird der Block ignoriert.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE image/svg+xml text/html text/css application/javascript application/json
+</IfModule>

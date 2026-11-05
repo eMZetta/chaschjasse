@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Farbensammler" (alle 9 Karten einer Farbe in eigenen Stichen): Faecher aus neun Rosen-Karten mit grosser Rose davor -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#ebe0c6"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- alle neun Rosen-Karten im Faecher -->
+  <g>
+    <g transform="rotate(-48 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">6</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(-36 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">7</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(-24 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">8</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(-12 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">9</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g>
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">10</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(12 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(24 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">O</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(36 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">K</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+    <g transform="rotate(48 128 150)">
+      <rect x="110" y="48" width="36" height="56" rx="5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="119" y="63" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">A</text>
+      <circle cx="128" cy="80" r="6" fill="#c8331f"/>
+    </g>
+  </g>
+
+  <!-- grosses Rosen-Symbol davor -->
+  <circle cx="128" cy="164" r="42" fill="#fff3d0" stroke="#5b4628" stroke-width="3"/>
+    <g transform="translate(128 164) scale(1.9)">
+      <polygon points="1.0,-7.9 11.2,-15.4 7.2,-3.4" fill="#2f7a46" stroke="#173f24" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="7.9,-1.5 18.1,5.9 5.5,5.8" fill="#2f7a46" stroke="#173f24" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="3.8,7.0 0.0,19.0 -3.8,7.0" fill="#2f7a46" stroke="#173f24" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="-5.5,5.8 -18.1,5.9 -7.9,-1.5" fill="#2f7a46" stroke="#173f24" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="-7.2,-3.4 -11.2,-15.4 -1.0,-7.9" fill="#2f7a46" stroke="#173f24" stroke-width="1.5" stroke-linejoin="round"/>
+      <circle cx="0" cy="-9" r="9" fill="#c8331f" stroke="#7a1a0e" stroke-width="2"/>
+      <circle cx="8.6" cy="-2.8" r="9" fill="#c8331f" stroke="#7a1a0e" stroke-width="2"/>
+      <circle cx="5.3" cy="7.3" r="9" fill="#c8331f" stroke="#7a1a0e" stroke-width="2"/>
+      <circle cx="-5.3" cy="7.3" r="9" fill="#c8331f" stroke="#7a1a0e" stroke-width="2"/>
+      <circle cx="-8.6" cy="-2.8" r="9" fill="#c8331f" stroke="#7a1a0e" stroke-width="2"/>
+      <circle cx="0" cy="0" r="6" fill="#ffd34a" stroke="#9a6510" stroke-width="2"/>
+    </g>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

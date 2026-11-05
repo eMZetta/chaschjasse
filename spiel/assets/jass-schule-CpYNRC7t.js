@@ -1,0 +1,1 @@
+var e=`/spiel/assets/jass-schule-CIEvu1h2.webp`;export{e as default};

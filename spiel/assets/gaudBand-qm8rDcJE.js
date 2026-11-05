@@ -1,0 +1,1 @@
+import{pt as e}from"./variantGroups-DL4cK5Db.js";var t=`jass.gaudBand`;function n(){try{return localStorage.getItem(t)===`1`}catch{return!1}}var r=e(n());function i(){if(r.value)return!1;r.value=!0;try{localStorage.setItem(t,`1`)}catch{}return!0}export{r as n,i as t};

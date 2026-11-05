@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Weismaschine" (300 Weispunkte in einer Runde): Punktetopf, aus dem die Punkte explodieren -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#8a4a2b"/>
+      <stop offset="1" stop-color="#3d1c0e"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#ebe0c6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2452f"/>
+      <stop offset="1" stop-color="#9c2414"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- Explosion ueber dem Topf -->
+  <polygon points="128.0,46.0 135.6,70.9 153.2,51.7 149.2,77.4 173.3,67.8 158.6,89.2 184.5,91.1 162.0,104.0 184.5,116.9 158.6,118.8 173.3,140.2 149.2,130.6 153.2,156.3 135.6,137.1 128.0,162.0 120.4,137.1 102.8,156.3 106.8,130.6 82.7,140.2 97.4,118.8 71.5,116.9 94.0,104.0 71.5,91.1 97.4,89.2 82.7,67.8 106.8,77.4 102.8,51.7 120.4,70.9" fill="#f0a32a" stroke="#8a3a0a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="136.7,62.9 139.8,78.6 153.7,70.8 149.6,86.2 165.6,85.2 155.2,97.4 170.0,103.4 155.4,109.8 166.1,121.7 150.1,121.1 154.7,136.4 140.5,129.0 138.0,144.8 128.4,132.0 119.3,145.1 116.2,129.4 102.3,137.2 106.4,121.8 90.4,122.8 100.8,110.6 86.0,104.6 100.6,98.2 89.9,86.3 105.9,86.9 101.3,71.6 115.5,79.0 118.0,63.2 127.6,76.0" fill="#ffe08a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+  <text x="128" y="117" font-size="36" fill="#9c2414" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">300</text>
+
+  <!-- fliegende Punkte -->
+  <g transform="rotate(-20 64 104)"><rect x="47" y="94" width="34" height="20" rx="10" fill="url(#gold)" stroke="#5a3a0c" stroke-width="2"/><text x="64" y="109" font-size="12" fill="#5a3a0c" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">+50</text></g>
+  <g transform="rotate(18 194 100)"><rect x="177" y="90" width="34" height="20" rx="10" fill="url(#gold)" stroke="#5a3a0c" stroke-width="2"/><text x="194" y="105" font-size="12" fill="#5a3a0c" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">+100</text></g>
+  <g transform="rotate(-10 76 64)"><rect x="59" y="54" width="34" height="20" rx="10" fill="url(#gold)" stroke="#5a3a0c" stroke-width="2"/><text x="76" y="69" font-size="12" fill="#5a3a0c" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">+20</text></g>
+  <g transform="rotate(12 186 60)"><rect x="169" y="50" width="34" height="20" rx="10" fill="url(#gold)" stroke="#5a3a0c" stroke-width="2"/><text x="186" y="65" font-size="12" fill="#5a3a0c" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">+150</text></g>
+
+  <!-- Punktetopf -->
+  <ellipse cx="128" cy="150" rx="54" ry="12" fill="#2a2a2a"/>
+  <path d="M74 150 Q74 206 128 206 Q182 206 182 150 Z" fill="#3b3b3b" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M84 162 Q88 196 122 200" fill="none" stroke="#6f7378" stroke-width="4" stroke-linecap="round"/>
+  <rect x="62" y="144" width="132" height="12" rx="6" fill="#6f7378" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M62 158 q-12 2 -10 14" fill="none" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M194 158 q12 2 10 14" fill="none" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

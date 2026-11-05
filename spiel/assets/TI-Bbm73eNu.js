@@ -1,0 +1,1 @@
+var e=`/spiel/assets/TI-kra5YF6b.webp`;export{e as default};

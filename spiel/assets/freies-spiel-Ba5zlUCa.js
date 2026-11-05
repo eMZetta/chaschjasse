@@ -1,0 +1,1 @@
+var e=`/spiel/assets/freies-spiel-D3jJ7-H3.webp`;export{e as default};

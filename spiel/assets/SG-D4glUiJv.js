@@ -1,0 +1,1 @@
+var e=`/spiel/assets/SG-_fWwtt3z.webp`;export{e as default};

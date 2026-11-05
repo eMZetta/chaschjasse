@@ -1,0 +1,1 @@
+import{pt as e,st as t}from"./variantGroups-DL4cK5Db.js";import{Y as n}from"./jasskasse-0IUq6wPI.js";function r({hintId:r,canPlay:i,resumed:a=!1,adventure:o=!1}){let s=n(),c=!a&&!s.isHidden(r,o),l=e(!1);return t(()=>!!i(),e=>{if(!c){l.value=!1;return}e?l.value=!0:(l.value&&(c=!1),l.value=!1)},{immediate:!0}),{coachOpen:l,hintId:r,adventure:o}}export{r as t};

@@ -1,0 +1,1 @@
+var e=`/spiel/assets/GR-CPT1viRm.webp`;export{e as default};

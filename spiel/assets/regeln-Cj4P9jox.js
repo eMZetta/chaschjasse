@@ -1,0 +1,1 @@
+var e=`/spiel/assets/regeln-BVI2GOCo.webp`;export{e as default};

@@ -1,0 +1,1 @@
+import{r as e}from"./effects-DRV-1GOZ.js";function t(){return e().calm}export{t};

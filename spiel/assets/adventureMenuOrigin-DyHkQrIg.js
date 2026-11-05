@@ -1,0 +1,1 @@
+import{pt as e,w as t}from"./variantGroups-DL4cK5Db.js";var n=e(`map`);function r(e){n.value=e===`reisebuch`?`reisebuch`:`map`}function i(){let e=t(()=>n.value===`reisebuch`);return{backRoute:t(()=>({name:e.value?`adventure-hub`:`map`})),backLabel:t(()=>e.value?`Zurück zum Reisebuch`:`Zurück zur Karte`)}}export{i as n,r as t};

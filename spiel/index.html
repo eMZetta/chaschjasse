@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover: auf Handys mit Notch bis unter Notch/Statusleiste zeichnen; Bedienelemente
+         halten die Abstaende per env(safe-area-inset-*) selbst ein (siehe style.css --safe-top). -->
+    <!-- Pinch-Zoom gesperrt: ein versehentlicher Zwei-Finger-Zoom blieb in der App haengen (kein Weg zurueck). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <!-- Nur native Android-App: ohne viewport-fit=cover legt das Capacitor-Plugin SystemBars den Rand von Status- und
+         Navigationsleiste nativ als Polster um die WebView (env(safe-area-inset-*) bleibt 0). Sonst klebt das Layout
+         auf Tablets (Samsung A11) unter den Leisten. iOS, iPad und Web bleiben unveraendert. -->
+    <script>
+      if (window.Capacitor && window.Capacitor.getPlatform && window.Capacitor.getPlatform() === 'android') {
+        document.querySelector('meta[name=viewport]').content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+      }
+    </script>
+    <title>Chasch jasse?! Schweizer Jass im Browser</title>
+    <!-- Fuer die externe Web-Version (Suche, Link-Vorschau); in den nativen Apps ohne Wirkung -->
+    <meta name="description" content="Jassen im Browser: Schieber, Coiffeur, Differenzler und viele weitere Schweizer Jassarten gegen den Computer, online mit Freunden und mit einem Abenteuer durch die Schweiz." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Chasch jasse?!" />
+    <meta property="og:description" content="Schweizer Jass im Browser: gegen den Computer, online mit Freunden und im Abenteuer." />
+    <meta property="og:image" content="/spiel/icon-512.png" />
+    <meta property="og:locale" content="de_CH" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/spiel/favicon.ico?v=7" sizes="16x16 32x32 48x48 64x64" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/spiel/icon-192.png?v=7" />
+    <!-- Icon fuer "Zum Home-Bildschirm" auf iOS (180 x 180, ohne Transparenz - iOS rundet die Ecken selbst) -->
+    <!-- ?v=N hochzaehlen, wenn das Icon aendert: iOS cached Touch-Icons pro Domain sehr hartnaeckig -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/spiel/apple-touch-icon.png?v=7" />
+    <link rel="manifest" href="/spiel/manifest.webmanifest" />
+    <meta name="theme-color" content="#1b3a2b" />
+    <meta name="apple-mobile-web-app-title" content="Chasch jasse?!" />
+    <!-- Vom Home-Bildschirm gestartet: ohne Safari-Leisten, Statusleiste durchsichtig ueber dem Hintergrundbild -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script type="module" crossorigin src="/spiel/assets/index-CxAgiPmJ.js"></script>
+    <script>(function () {
+  if (location.pathname !== "/spiel/") return
+  var set = {"portrait":["/spiel/assets/home-B2KSbKZY.webp","/spiel/assets/wortmarke-hoch-1-HXUKZD.webp","/spiel/assets/grund-CMEq8g29.webp","/spiel/assets/karte-0-DRv1_rOs.webp","/spiel/assets/karte-1-CSoxLInh.webp","/spiel/assets/karte-2-CgLQ9cJU.webp","/spiel/assets/karte-3-DkzV2j7F.webp","/spiel/assets/band-M6uIaQIL.webp"],"landscape":["/spiel/assets/home-B2KSbKZY.webp","/spiel/assets/wortmarke-quer-j5vlczDy.webp","/spiel/assets/grund-CMEq8g29.webp","/spiel/assets/karte-0-DRv1_rOs.webp","/spiel/assets/karte-1-CSoxLInh.webp","/spiel/assets/karte-2-CgLQ9cJU.webp","/spiel/assets/karte-3-DkzV2j7F.webp","/spiel/assets/band-M6uIaQIL.webp"],"firstStart":[]}, profile
+  try {
+    profile = JSON.parse(localStorage.getItem("jassdesuisse.profile.v1") || '{}')
+  } catch (e) {}
+  var landscape = window.matchMedia && matchMedia("(min-aspect-ratio: 4/3)").matches
+  // Namens-Dialog offen? (Logik wie loadFromStorage in store/profile.js)
+  profile = profile || {}
+  var introDone = typeof profile.introDone === 'boolean' ? profile.introDone : typeof profile.name === 'string' && profile.name.trim().length > 0
+  var hrefs = landscape ? set.landscape : set.portrait
+  if (!introDone) hrefs = set.firstStart.concat(hrefs)
+  hrefs.forEach(function (href) {
+    var link = document.createElement('link')
+    link.rel = 'preload'
+    link.as = 'image'
+    link.href = href
+    document.head.appendChild(link)
+  })
+})()</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>Chasch jasse?! braucht JavaScript. Bitte im Browser aktivieren.</noscript>
+  </body>
+</html>

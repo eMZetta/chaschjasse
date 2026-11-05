@@ -1,0 +1,1 @@
+var e=`/spiel/assets/kueche-BJZB4-hY.webp`;export{e as default};

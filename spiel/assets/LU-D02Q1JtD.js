@@ -1,0 +1,1 @@
+var e=`/spiel/assets/LU-CkQdMGBk.webp`;export{e as default};

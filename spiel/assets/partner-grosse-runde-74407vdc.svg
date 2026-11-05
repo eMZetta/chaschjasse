@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Grosses Paarturnier" (Partnerschieber-Turnier mit mindestens zwoelf Spielern gewonnen): Pokal, Paare im Kreis -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f7fa"/>
+      <stop offset="0.55" stop-color="#aab4bf"/>
+      <stop offset="1" stop-color="#6c7782"/>
+    </linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6c79a"/>
+      <stop offset="0.55" stop-color="#b8692c"/>
+      <stop offset="1" stop-color="#7a3e14"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#ebe0c6"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <g>
+    <line x1="128.0" y1="46.0" x2="169.0" y2="57.0" stroke="#fff1b0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="199.0" y1="87.0" x2="210.0" y2="128.0" stroke="#fff1b0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="199.0" y1="169.0" x2="169.0" y2="199.0" stroke="#fff1b0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="128.0" y1="210.0" x2="87.0" y2="199.0" stroke="#fff1b0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="57.0" y1="169.0" x2="46.0" y2="128.0" stroke="#fff1b0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="57.0" y1="87.0" x2="87.0" y2="57.0" stroke="#fff1b0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="128.0" cy="46.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="169.0" cy="57.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="199.0" cy="87.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="210.0" cy="128.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="199.0" cy="169.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="169.0" cy="199.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="128.0" cy="210.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="87.0" cy="199.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="57.0" cy="169.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="46.0" cy="128.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="57.0" cy="87.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+    <circle cx="87.0" cy="57.0" r="6.5" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+  </g>
+  <g transform="translate(128 134) scale(0.7) translate(-128 -130)">
+    <path d="M92 78 H164 V110 C164 134 148 148 128 150 C108 148 92 134 92 110 Z" fill="url(#gold)" stroke="#6b4512" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M92 86 C74 86 72 112 94 120" fill="none" stroke="#c98d1d" stroke-width="7" stroke-linecap="round"/>
+    <path d="M164 86 C182 86 184 112 162 120" fill="none" stroke="#c98d1d" stroke-width="7" stroke-linecap="round"/>
+    <rect x="122" y="148" width="12" height="18" fill="url(#gold)" stroke="#6b4512" stroke-width="2.5"/>
+    <path d="M104 168 H152 L158 182 H98 Z" fill="url(#gold)" stroke="#6b4512" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M104 88 C104 112 112 128 124 136" fill="none" stroke="#fff3c4" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+</svg>

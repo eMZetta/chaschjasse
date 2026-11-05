@@ -1,0 +1,1 @@
+var e=`/spiel/assets/OW-Dx70f0sm.webp`;export{e as default};

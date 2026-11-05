@@ -1,0 +1,1 @@
+var e=`/spiel/assets/AR-DEiL2sxA.webp`;export{e as default};

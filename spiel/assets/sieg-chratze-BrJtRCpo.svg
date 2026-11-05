@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Rappenkönig" (Chratze-Partie gewonnen) -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9a043"/>
+      <stop offset="1" stop-color="#a5601c"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6fb4ff"/><stop offset="1" stop-color="#1f5fbf"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8bdc62"/><stop offset="1" stop-color="#2f8a2a"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a7a"/><stop offset="1" stop-color="#c32a22"/></linearGradient>
+    <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe98a"/><stop offset="1" stop-color="#e0a812"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf5"/><stop offset="1" stop-color="#ebe0c6"/></linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fafafa"/><stop offset="1" stop-color="#8d9298"/></linearGradient><linearGradient id="coingold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe98a"/><stop offset="1" stop-color="#c58a14"/></linearGradient></defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <g transform="translate(86 168) rotate(-14)"><circle r="21.6" fill="url(#silver)" stroke="#3a2410" stroke-width="2.5"/><circle r="16.8" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-6.5" cy="-8.6" rx="7.6" ry="3.9" fill="#fff" opacity=".4"/><text x="0" y="6.2" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="17.7" fill="#3a2410" opacity=".85">5</text></g><g transform="translate(170 170) rotate(12)"><circle r="23.0" fill="url(#coingold)" stroke="#3a2410" stroke-width="2.5"/><circle r="18.0" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-6.9" cy="-9.2" rx="8.1" ry="4.1" fill="#fff" opacity=".4"/><text x="0" y="6.6" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="18.8" fill="#3a2410" opacity=".85">10</text></g><g transform="translate(128 150) rotate(0)"><circle r="31.7" fill="url(#silver)" stroke="#3a2410" stroke-width="2.5"/><circle r="24.7" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-9.5" cy="-12.7" rx="11.1" ry="5.7" fill="#fff" opacity=".4"/><text x="0" y="9.1" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="25.9" fill="#3a2410" opacity=".85">20</text></g><g transform="translate(128 192) rotate(3)"><circle r="18.7" fill="url(#coingold)" stroke="#3a2410" stroke-width="2.5"/><circle r="14.6" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-5.6" cy="-7.5" rx="6.6" ry="3.4" fill="#fff" opacity=".4"/><text x="0" y="5.4" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="15.3" fill="#3a2410" opacity=".85">1</text></g><g transform="translate(128 92) scale(1.5)"><path d="M-26 14 L-30 -14 L-14 2 L0 -20 L14 2 L30 -14 L26 14 Z" fill="url(#gold)" stroke="#7a4d0c" stroke-width="3" stroke-linejoin="round"/><rect x="-27" y="12" width="54" height="9" rx="3" fill="url(#gold)" stroke="#7a4d0c" stroke-width="3"/><circle cx="0" cy="-20" r="4" fill="#ffe08a" stroke="#7a4d0c" stroke-width="2"/><circle cx="-30" cy="-14" r="3.5" fill="#ffe08a" stroke="#7a4d0c" stroke-width="2"/><circle cx="30" cy="-14" r="3.5" fill="#ffe08a" stroke="#7a4d0c" stroke-width="2"/></g><path d="M70 89 L72.1 93.9 L77 96 L72.1 98.1 L70 103 L67.9 98.1 L63 96 L67.9 93.9 Z" fill="#fff6c8" stroke="#c9a24a" stroke-width="1.5"/><path d="M190 94 L191.8 98.2 L196 100 L191.8 101.8 L190 106 L188.2 101.8 L184 100 L188.2 98.2 Z" fill="#fff6c8" stroke="#c9a24a" stroke-width="1.5"/><path d="M176 59 L177.5 62.5 L181 64 L177.5 65.5 L176 69 L174.5 65.5 L171 64 L174.5 62.5 Z" fill="#fff6c8" stroke="#c9a24a" stroke-width="1.5"/>
+</svg>

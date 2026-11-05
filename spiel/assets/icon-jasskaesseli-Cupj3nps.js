@@ -1,0 +1,1 @@
+var e=`/spiel/assets/icon-jasskaesseli-CUMOL16T.webp`;export{e as t};

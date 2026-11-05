@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Pot-Räuber" (grossen Pot kassiert) -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9a043"/>
+      <stop offset="1" stop-color="#a5601c"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6fb4ff"/><stop offset="1" stop-color="#1f5fbf"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8bdc62"/><stop offset="1" stop-color="#2f8a2a"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a7a"/><stop offset="1" stop-color="#c32a22"/></linearGradient>
+    <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe98a"/><stop offset="1" stop-color="#e0a812"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf5"/><stop offset="1" stop-color="#ebe0c6"/></linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fafafa"/><stop offset="1" stop-color="#8d9298"/></linearGradient><linearGradient id="coingold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe98a"/><stop offset="1" stop-color="#c58a14"/></linearGradient></defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <ellipse cx="128" cy="158.4" rx="75.0" ry="35.0" fill="#4a2a0c" opacity="0.55"/><path d="M53.0 139.5 Q128 237.5 203.0 139.5 Z" fill="url(#wood)" stroke="#5a3208" stroke-width="3"/><ellipse cx="128" cy="139.5" rx="75.0" ry="16.8" fill="#c47a28" stroke="#5a3208" stroke-width="3"/><ellipse cx="128" cy="140.9" rx="67.0" ry="11.9" fill="#8a4e14"/><g transform="translate(104 138) rotate(-16)"><circle r="18.7" fill="url(#silver)" stroke="#3a2410" stroke-width="2.5"/><circle r="14.6" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-5.6" cy="-7.5" rx="6.6" ry="3.4" fill="#fff" opacity=".4"/><text x="0" y="5.4" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="15.3" fill="#3a2410" opacity=".85">5</text></g><g transform="translate(152 136) rotate(14)"><circle r="20.2" fill="url(#coingold)" stroke="#3a2410" stroke-width="2.5"/><circle r="15.7" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-6.0" cy="-8.1" rx="7.1" ry="3.6" fill="#fff" opacity=".4"/><text x="0" y="5.8" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="16.5" fill="#3a2410" opacity=".85">10</text></g><g transform="translate(128 126) rotate(0)"><circle r="23.0" fill="url(#silver)" stroke="#3a2410" stroke-width="2.5"/><circle r="18.0" fill="none" stroke="#3a2410" stroke-opacity=".45" stroke-width="1.5"/><ellipse cx="-6.9" cy="-9.2" rx="8.1" ry="4.1" fill="#fff" opacity=".4"/><text x="0" y="6.6" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="18.8" fill="#3a2410" opacity=".85">20</text></g><g transform="translate(128 78)"><path d="M-44 -6 Q-30 -28 0 -22 Q30 -28 44 -6 Q40 22 18 22 Q6 22 0 10 Q-6 22 -18 22 Q-40 22 -44 -6 Z" fill="#1c1c24" stroke="#000" stroke-width="3"/><ellipse cx="-20" cy="-2" rx="11" ry="7" fill="#fff6d0"/><ellipse cx="20" cy="-2" rx="11" ry="7" fill="#fff6d0"/><circle cx="-20" cy="-2" r="3.5" fill="#1c1c24"/><circle cx="20" cy="-2" r="3.5" fill="#1c1c24"/></g><path d="M60 114 L61.8 118.2 L66 120 L61.8 121.8 L60 126 L58.2 121.8 L54 120 L58.2 118.2 Z" fill="#fff6c8" stroke="#c9a24a" stroke-width="1.5"/><path d="M200 108 L201.8 112.2 L206 114 L201.8 115.8 L200 120 L198.2 115.8 L194 114 L198.2 112.2 Z" fill="#fff6c8" stroke="#c9a24a" stroke-width="1.5"/>
+</svg>

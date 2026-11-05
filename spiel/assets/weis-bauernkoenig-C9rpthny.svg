@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Bauernkoenig" (vier Under gewiesen): vier Under gefaechert, Krone und 200er-Banner -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#ebe0c6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2452f"/>
+      <stop offset="1" stop-color="#9c2414"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- vier Under, gefaechert -->
+  <g>
+    <g transform="rotate(-30 128 210)">
+      <rect x="104" y="90" width="48" height="74" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="128.0" y="140.7" font-size="38" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+      <text x="113" y="105" font-size="11" fill="#c8331f" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+    </g>
+    <g transform="rotate(-10 128 210)">
+      <rect x="104" y="90" width="48" height="74" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="128.0" y="140.7" font-size="38" fill="#d79a22" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+      <text x="113" y="105" font-size="11" fill="#d79a22" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+    </g>
+    <g transform="rotate(10 128 210)">
+      <rect x="104" y="90" width="48" height="74" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="128.0" y="140.7" font-size="38" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+      <text x="113" y="105" font-size="11" fill="#2a2a2a" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+    </g>
+    <g transform="rotate(30 128 210)">
+      <rect x="104" y="90" width="48" height="74" rx="6" fill="url(#card)" stroke="#5b4628" stroke-width="2.5"/>
+      <text x="128.0" y="140.7" font-size="38" fill="#2f7a46" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+      <text x="113" y="105" font-size="11" fill="#2f7a46" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">U</text>
+    </g>
+  </g>
+
+  <!-- Krone -->
+  <path d="M94 70 L100 40 L114 58 L128 32 L142 58 L156 40 L162 70 Z" fill="url(#gold)" stroke="#5a3a0c" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="92" y="66" width="72" height="11" rx="3" fill="url(#gold)" stroke="#5a3a0c" stroke-width="3"/>
+  <circle cx="100" cy="40" r="5" fill="#fff1b0" stroke="#5a3a0c" stroke-width="2"/>
+  <circle cx="128" cy="32" r="5" fill="#fff1b0" stroke="#5a3a0c" stroke-width="2"/>
+  <circle cx="156" cy="40" r="5" fill="#fff1b0" stroke="#5a3a0c" stroke-width="2"/>
+  <circle cx="128" cy="71" r="3.5" fill="#c8331f"/>
+
+  <!-- Punkte-Banner -->
+  <g>
+    <path d="M62.0 176.0 H84.0 V208.0 H62.0 L71.0 192.0Z" fill="#7a1a0e"/>
+    <path d="M194.0 176.0 H172.0 V208.0 H194.0 L185.0 192.0Z" fill="#7a1a0e"/>
+    <rect x="76.0" y="170.0" width="104" height="32" rx="3" fill="url(#ribbon)" stroke="#5a1408" stroke-width="2"/>
+    <text x="128" y="195.4" font-size="26" fill="#fff3d0" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">200</text>
+  </g>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

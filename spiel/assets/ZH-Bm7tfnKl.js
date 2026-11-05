@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ZH-CD1QuNm7.webp`;export{e as default};

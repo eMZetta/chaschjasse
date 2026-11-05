@@ -1,0 +1,1 @@
+var e=`/spiel/assets/VD-CFmJMuF-.webp`;export{e as default};

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Jass-Veteran" (100 Partien): grosse 100 in Bronze mit einem Stern und kurzem Lorbeer, Bronzerand -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#ffd9b0"/>
+      <stop offset="0.45" stop-color="#c07a3a"/>
+      <stop offset="1" stop-color="#6a3a14"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6c79a"/>
+      <stop offset="0.55" stop-color="#b8692c"/>
+      <stop offset="1" stop-color="#7a3e14"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- Lorbeer -->
+  <g>
+    <g>
+      <path d="M136.4 207.6 A80 80 0 0 0 205.6 147.4" fill="none" stroke="#3a2406" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="146.1" cy="213.1" rx="9" ry="4.5" transform="rotate(-40 146.1 213.1)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="143.2" cy="199.4" rx="9" ry="4.5" transform="rotate(16 143.2 199.4)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="175.8" cy="200.7" rx="9" ry="4.5" transform="rotate(-61.3 175.8 200.7)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="168.1" cy="189" rx="9" ry="4.5" transform="rotate(-5.3 168.1 189)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="199" cy="178.3" rx="9" ry="4.5" transform="rotate(-82.7 199 178.3)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="187.6" cy="170.2" rx="9" ry="4.5" transform="rotate(-26.7 187.6 170.2)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="212.4" cy="149" rx="9" ry="4.5" transform="rotate(-104 212.4 149)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="198.8" cy="145.7" rx="9" ry="4.5" transform="rotate(-48 198.8 145.7)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+    </g>
+    <g transform="translate(256 0) scale(-1 1)">
+      <path d="M136.4 207.6 A80 80 0 0 0 205.6 147.4" fill="none" stroke="#3a2406" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="146.1" cy="213.1" rx="9" ry="4.5" transform="rotate(-40 146.1 213.1)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="143.2" cy="199.4" rx="9" ry="4.5" transform="rotate(16 143.2 199.4)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="175.8" cy="200.7" rx="9" ry="4.5" transform="rotate(-61.3 175.8 200.7)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="168.1" cy="189" rx="9" ry="4.5" transform="rotate(-5.3 168.1 189)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="199" cy="178.3" rx="9" ry="4.5" transform="rotate(-82.7 199 178.3)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="187.6" cy="170.2" rx="9" ry="4.5" transform="rotate(-26.7 187.6 170.2)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="212.4" cy="149" rx="9" ry="4.5" transform="rotate(-104 212.4 149)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="198.8" cy="145.7" rx="9" ry="4.5" transform="rotate(-48 198.8 145.7)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Sterne -->
+  <g>
+    <polygon points="128,61 131.2,69.6 140.4,70 133.2,75.7 135.6,84.5 128,79.5 120.4,84.5 122.8,75.7 115.6,70 124.8,69.6" fill="url(#metal)" stroke="#3a2406" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Zahl -->
+  <text x="130" y="153" font-size="64" fill="#1a1006" opacity="0.6" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">100</text>
+  <text x="128" y="150" font-size="64" fill="url(#metal)" stroke="#2a1804" stroke-width="3" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">100</text>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

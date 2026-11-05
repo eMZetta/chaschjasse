@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Jass-Ikone" (1000 Partien): grosse 1000 in Gold mit fuenf Sternen, vollem Lorbeer und Strahlen, Goldrand -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff6c8"/>
+      <stop offset="0.45" stop-color="#f0c03c"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.55" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <clipPath id="feltclip">
+      <circle cx="128" cy="128" r="95"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- Strahlen -->
+  <g clip-path="url(#feltclip)">
+    <path d="M128 128 L237.6 118.4 L237.6 137.6 Z M128 128 L232.9 161.1 L225.6 178.8 Z M128 128 L212.3 198.7 L198.7 212.3 Z M128 128 L178.8 225.6 L161.1 232.9 Z M128 128 L137.6 237.6 L118.4 237.6 Z M128 128 L94.9 232.9 L77.2 225.6 Z M128 128 L57.3 212.3 L43.7 198.7 Z M128 128 L30.4 178.8 L23.1 161.1 Z M128 128 L18.4 137.6 L18.4 118.4 Z M128 128 L23.1 94.9 L30.4 77.2 Z M128 128 L43.7 57.3 L57.3 43.7 Z M128 128 L77.2 30.4 L94.9 23.1 Z M128 128 L118.4 18.4 L137.6 18.4 Z M128 128 L161.1 23.1 L178.8 30.4 Z M128 128 L198.7 43.7 L212.3 57.3 Z M128 128 L225.6 77.2 L232.9 94.9 Z" fill="#ffe08a" opacity="0.35"/>
+  </g>
+
+  <!-- Lorbeer -->
+  <g>
+    <g>
+      <path d="M136.4 207.6 A80 80 0 0 0 205.6 147.4" fill="none" stroke="#3a2406" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="146.1" cy="213.1" rx="9" ry="4.5" transform="rotate(-40 146.1 213.1)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="143.2" cy="199.4" rx="9" ry="4.5" transform="rotate(16 143.2 199.4)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="164.5" cy="207" rx="9" ry="4.5" transform="rotate(-52.8 164.5 207)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="158.6" cy="194.3" rx="9" ry="4.5" transform="rotate(3.2 158.6 194.3)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="181.1" cy="196.9" rx="9" ry="4.5" transform="rotate(-65.6 181.1 196.9)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="172.5" cy="185.8" rx="9" ry="4.5" transform="rotate(-9.6 172.5 185.8)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="195" cy="183.5" rx="9" ry="4.5" transform="rotate(-78.4 195 183.5)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="184.2" cy="174.5" rx="9" ry="4.5" transform="rotate(-22.4 184.2 174.5)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="205.7" cy="167.2" rx="9" ry="4.5" transform="rotate(-91.2 205.7 167.2)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="193.2" cy="160.9" rx="9" ry="4.5" transform="rotate(-35.2 193.2 160.9)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="212.4" cy="149" rx="9" ry="4.5" transform="rotate(-104 212.4 149)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="198.8" cy="145.7" rx="9" ry="4.5" transform="rotate(-48 198.8 145.7)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+    </g>
+    <g transform="translate(256 0) scale(-1 1)">
+      <path d="M136.4 207.6 A80 80 0 0 0 205.6 147.4" fill="none" stroke="#3a2406" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="146.1" cy="213.1" rx="9" ry="4.5" transform="rotate(-40 146.1 213.1)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="143.2" cy="199.4" rx="9" ry="4.5" transform="rotate(16 143.2 199.4)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="164.5" cy="207" rx="9" ry="4.5" transform="rotate(-52.8 164.5 207)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="158.6" cy="194.3" rx="9" ry="4.5" transform="rotate(3.2 158.6 194.3)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="181.1" cy="196.9" rx="9" ry="4.5" transform="rotate(-65.6 181.1 196.9)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="172.5" cy="185.8" rx="9" ry="4.5" transform="rotate(-9.6 172.5 185.8)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="195" cy="183.5" rx="9" ry="4.5" transform="rotate(-78.4 195 183.5)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="184.2" cy="174.5" rx="9" ry="4.5" transform="rotate(-22.4 184.2 174.5)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="205.7" cy="167.2" rx="9" ry="4.5" transform="rotate(-91.2 205.7 167.2)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="193.2" cy="160.9" rx="9" ry="4.5" transform="rotate(-35.2 193.2 160.9)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="212.4" cy="149" rx="9" ry="4.5" transform="rotate(-104 212.4 149)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+      <ellipse cx="198.8" cy="145.7" rx="9" ry="4.5" transform="rotate(-48 198.8 145.7)" fill="url(#metal)" stroke="#3a2406" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Sterne -->
+  <g>
+    <polygon points="76,71.4 79.2,80 88.4,80.4 81.2,86.1 83.6,94.9 76,89.9 68.4,94.9 70.8,86.1 63.6,80.4 72.8,80" fill="url(#metal)" stroke="#3a2406" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="102,66.2 105.2,74.8 114.4,75.2 107.2,80.9 109.6,89.7 102,84.7 94.4,89.7 96.8,80.9 89.6,75.2 98.8,74.8" fill="url(#metal)" stroke="#3a2406" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="128,61 131.2,69.6 140.4,70 133.2,75.7 135.6,84.5 128,79.5 120.4,84.5 122.8,75.7 115.6,70 124.8,69.6" fill="url(#metal)" stroke="#3a2406" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="154,66.2 157.2,74.8 166.4,75.2 159.2,80.9 161.6,89.7 154,84.7 146.4,89.7 148.8,80.9 141.6,75.2 150.8,74.8" fill="url(#metal)" stroke="#3a2406" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="180,71.4 183.2,80 192.4,80.4 185.2,86.1 187.6,94.9 180,89.9 172.4,94.9 174.8,86.1 167.6,80.4 176.8,80" fill="url(#metal)" stroke="#3a2406" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Zahl -->
+  <text x="130" y="153" font-size="54" fill="#1a1006" opacity="0.6" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">1000</text>
+  <text x="128" y="150" font-size="54" fill="url(#metal)" stroke="#2a1804" stroke-width="3" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" text-anchor="middle">1000</text>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

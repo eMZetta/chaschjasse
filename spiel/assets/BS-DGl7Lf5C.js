@@ -1,0 +1,1 @@
+var e=`/spiel/assets/BS-Dk8ZJF6G.webp`;export{e as default};
