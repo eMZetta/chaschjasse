@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Chasch Jasse? Hesch Gäud?! – Testen</title>
-  <meta name="description" content="Teste die Jass-App «Chasch Jasse? Hesch Gäud?!» vor dem Start – auf Android oder iPhone, gratis, ohne Werbung, ohne Konto.">
+  <meta name="description" content="Teste die Jass-App «Chasch Jasse? Hesch Gäud?!» auf Android – für iPhone und iPad gibt es sie im App Store, gratis, ohne Werbung, ohne Konto.">
   <meta name="theme-color" content="#2f5d4a">
   <!-- Vorschau beim Teilen (WhatsApp, Signal, Mail) -->
   <meta property="og:type" content="website">
@@ -38,7 +38,7 @@
     <!-- <a class="spielen" href="spiel/">Im Browser spielen</a> -->
     <a href="support/">Support</a>
     <a href="datenschutz/">Datenschutz</a>
-    <a href="test.html" aria-current="page">Testen</a>
+    <a href="test.html" aria-current="page">Android-Test</a>
   </nav>
 
   <main>
@@ -94,23 +94,10 @@
 
     <section class="geraet" id="ios">
       <h2>iPhone und iPad</h2>
-      <p class="einstieg">Zwei Tipper, dann bist du dabei.</p>
-
-      <ol class="schritte" data-assistent="chaschjasse-test-schritt-ios">
-        <li data-schritt="1">
-          <strong>TestFlight laden</strong>
-          <span class="text">
-            Testversionen laufen über Apples App «TestFlight». Im App Store «Laden» tippen. Hast du TestFlight schon,
-            geht es mit «Schon erledigt – weiter» direkt zum nächsten Schritt.
-          </span>
-          <a class="kontakt" href="https://apps.apple.com/app/testflight/id899247664" target="_blank" rel="noopener">TestFlight laden</a>
-        </li>
-        <li data-schritt="2">
-          <strong>Am Test teilnehmen</strong>
-          <span class="text">In TestFlight «Akzeptieren» und dann «Installieren» tippen.</span>
-          <a class="kontakt" href="https://testflight.apple.com/join/d4GzuGqu" target="_blank" rel="noopener">Am Test teilnehmen</a>
-        </li>
-      </ol>
+      <p class="einstieg">Die App ist fertig und im App Store – ein Tipper genügt.</p>
+      <p class="store">
+        <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
+      </p>
     </section>
 
     <div class="fertig" id="fertig" hidden>
@@ -123,11 +110,11 @@
       <h2>Und dann?</h2>
       <ul>
         <li>Spiel ab und zu eine Partie – auch eine kurze hilft.</li>
-        <li><strong>Bleib dabei</strong> und lösche die App während der 14 Tage nicht. Updates kommen automatisch über den Play Store bzw. TestFlight.</li>
+        <li><strong>Bleib dabei</strong> und lösche die App während der 14 Tage nicht. Updates kommen automatisch über den Play Store.</li>
         <li>
           Fehler oder Ideen? Schreib mir an
           <a href="mailto:kontakt@chaschjasse.ch?subject=Chasch%20jasse%3F!%20%E2%80%93%20Test">kontakt@chaschjasse.ch</a>
-          oder nutze «Feedback an Entwickler senden» im Play Store bzw. «Feedback senden» in TestFlight.
+          oder nutze «Feedback an Entwickler senden» im Play Store.
         </li>
       </ul>
 
@@ -140,25 +127,16 @@
         </p>
       </details>
       <details>
-        <summary>iPhone: Der Link öffnet nur eine Webseite.</summary>
-        <p>
-          Dann fehlt noch TestFlight. Lade die App «TestFlight» aus dem App Store und tippe danach nochmals auf
-          <a href="https://testflight.apple.com/join/d4GzuGqu">testflight.apple.com/join/d4GzuGqu</a>.
-        </p>
-      </details>
-      <details>
         <summary>Warum so umständlich?</summary>
         <p>
-          Damit die App in die Stores darf, braucht es einen Test: Bei Google müssen mindestens 12 Personen 14 Tage lang
-          als Tester angemeldet bleiben, bei Apple laufen Testversionen nur über TestFlight. Die Schritte schreiben Google
-          und Apple vor.
+          Damit die App bei Google Play erscheinen darf, müssen mindestens 12 Personen 14 Tage lang als Tester
+          angemeldet bleiben. Die Schritte schreibt Google vor.
         </p>
       </details>
       <details>
         <summary>Welche Daten sehe ich als Entwickler?</summary>
         <p>
-          Bei Android die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe), bei TestFlight die Angaben,
-          die Apple an Entwickler weitergibt, sowie Rückmeldungen, die du selbst sendest. Mehr dazu in der
+          Die E-Mail-Adresse deines Google-Kontos (als Mitglied der Testgruppe) sowie Rückmeldungen, die du selbst sendest. Mehr dazu in der
           <a href="datenschutz/">Datenschutzerklärung</a>.
         </p>
       </details>
@@ -178,14 +156,14 @@
 
   <script>
     // Zeigt nur den Teil für das eigene Gerät. Jede Liste ist ein Assistent: Immer nur der aktuelle Schritt hat einen
-    // Knopf, wer aus Google, dem Play Store oder TestFlight zurückkommt, sieht den nächsten.
+    // Knopf, wer aus Google oder dem Play Store zurückkommt, sieht den nächsten.
     // Ohne Skript bleiben beide Teile mit allen Knöpfen stehen.
     (function () {
       var ua = navigator.userAgent;
       var istAndroid = /Android/i.test(ua);
       var istIos = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
       if (istAndroid) document.getElementById('ios').hidden = true;
-      else if (istIos) document.getElementById('android').hidden = true;
+      else if (istIos) { document.getElementById('android').hidden = true; document.getElementById('handy-infos').hidden = true; }
       else {
         document.getElementById('computer').hidden = false;
         ['android', 'ios', 'handy-infos'].forEach(function (id) { document.getElementById(id).hidden = true; });

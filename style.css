@@ -459,3 +459,8 @@ footer a { color: var(--holz-hell); }
 /* Startseite: Merkmale der App */
 .merkmale { padding-left: 1.2em; margin-bottom: 1.5em; }
 .merkmale li { margin-bottom: 0.6em; }
+
+/* Offizielles Apple-Abzeichen «Laden im App Store» */
+.store { margin: 0 0 1.5em; }
+.store a { display: inline-block; line-height: 0; border-radius: 8px; }
+.store img { display: block; height: 50px; width: auto; }

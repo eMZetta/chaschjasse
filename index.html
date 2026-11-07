@@ -8,11 +8,8 @@
   <meta name="theme-color" content="#2f5d4a">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Smart App Banner von Safari (iPhone/iPad): zeigt oben «Laden» bzw. «Öffnen», wenn die App installiert ist.
-       Sobald die App im App Store ist, die Apple-ID (App Store Connect → App-Informationen) hier und unten in APP_STORE_ID
-       eintragen und den Kommentar entfernen:
-  <meta name="apple-itunes-app" content="app-id=APPLE-ID">
-  -->
+  <!-- Smart App Banner von Safari (iPhone/iPad): zeigt oben «Laden» bzw. «Öffnen», wenn die App installiert ist -->
+  <meta name="apple-itunes-app" content="app-id=6822740667">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,7 +33,7 @@
     <!-- <a class="spielen" href="spiel/">Im Browser spielen</a> -->
     <a href="support/">Support</a>
     <a href="datenschutz/">Datenschutz</a>
-    <a href="test.html">Testen</a>
+    <a href="test.html">Android-Test</a>
   </nav>
 
   <main>
@@ -47,12 +44,10 @@
       <a class="kontakt flyer" href="test.html">Jetzt testen</a>
     </div>
 
-    <!-- Nur auf iPhone und iPad: zur App im App Store (dort «Laden» oder «Öffnen»), bis dahin zum Test über TestFlight -->
-    <div class="geraet-hinweis" id="ios-app" hidden>
-      <strong>Du hast ein iPhone oder iPad?</strong>
-      <span id="ios-app-text">Die App ist noch im Test – mit TestFlight spielst du schon jetzt.</span>
-      <a class="kontakt flyer" id="ios-app-link" href="test.html">Jetzt testen</a>
-    </div>
+    <!-- App Store: für alle gut sichtbar gleich oben -->
+    <p class="store">
+      <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
+    </p>
 
     <p class="einstieg">Der Schweizer Jass für Smartphone und Tablet – gegen den Computer oder online mit deinen Freunden.</p>
 
@@ -81,8 +76,11 @@
     -->
 
     <h2>App laden</h2>
+    <p class="store">
+      <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
+    </p>
     <p>
-      Bald im App Store und bei Google Play. Bis dahin kannst du die App schon
+      Für iPhone und iPad im App Store. Die Android-Version kommt bald bei Google Play, bis dahin kannst du sie
       <a href="test.html">als Testerin oder Tester</a> ausprobieren.
     </p>
   </main>
@@ -94,19 +92,6 @@
   <script>
     if (/Android/i.test(navigator.userAgent)) document.getElementById('android-test').hidden = false;
 
-    // Apple-ID der App aus App Store Connect, sobald sie im App Store ist (dann auch das Smart App Banner oben einschalten)
-    var APP_STORE_ID = '';
-    // iPadOS meldet sich wie ein Mac, verrät sich aber über den Touchscreen
-    var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
-    if (ios) {
-      if (APP_STORE_ID) {
-        document.getElementById('ios-app-text').textContent = 'Hol dir die App im App Store – oder öffne sie, wenn du sie schon hast.';
-        var link = document.getElementById('ios-app-link');
-        link.href = 'https://apps.apple.com/ch/app/id' + APP_STORE_ID;
-        link.textContent = 'Im App Store öffnen';
-      }
-      document.getElementById('ios-app').hidden = false;
-    }
   </script>
 </body>
 </html>
