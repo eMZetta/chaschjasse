@@ -578,3 +578,10 @@ main.seite details p { margin-bottom: 0.8em; }
   .inhalt, main.seite details { background: color-mix(in srgb, var(--papier) 85%, #000 15%); }
 }
 @media print { .inhalt { display: none; } }
+
+/* Verhaltensregeln (Support) */
+.regeln { list-style: none; padding: 0; counter-reset: regel; }
+.regeln li { counter-increment: regel; position: relative; padding: 4px 0 4px 44px; margin-bottom: 0.8em; }
+.regeln li::before { content: counter(regel); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--kontur); font: 700 0.95rem var(--font-titel); box-shadow: 0 0 0 2px var(--kontur); }
+.regeln strong { display: block; }
+main.seite h3 { font: 700 1.15rem/1.3 var(--font-titel); margin: 1.4em 0 0.4em; }
