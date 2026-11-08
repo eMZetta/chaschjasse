@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Invitation au jass – Chasch Jasse? Hesch Gäud?!</title>
+  <meta name="description" content="Quelqu’un t’a invité à une table de jass. Télécharge l’app « Chasch Jasse? Hesch Gäud?! » et rejoins avec le code du salon – gratuit, sans compte.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2f5d4a">
+  <link rel="alternate" hreflang="de-CH" href="https://chaschjasse.ch/einladung/">
+  <link rel="alternate" hreflang="fr-CH" href="https://chaschjasse.ch/fr/einladung/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chaschjasse.ch/fr/einladung/">
+  <meta property="og:title" content="Viens à la table de jass ! 🃏">
+  <meta property="og:description" content="Tu es invité à une partie de jass. Gratuit, sans publicité, sans compte.">
+  <meta property="og:image" content="https://chaschjasse.ch/icon.png">
+  <meta property="og:locale" content="fr_CH">
+  <link rel="icon" href="../../icon.png">
+  <link rel="apple-touch-icon" href="../../icon.png">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <header class="kopf">
+    <div class="kopf-inhalt">
+      <picture class="logo">
+        <source media="(min-width: 600px)" srcset="../../logo-quer.webp" width="1200" height="709">
+        <img src="../../logo-hoch.webp" alt="Chasch Jasse? Hesch Gäud?!" width="840" height="714">
+      </picture>
+      <div class="titelzeile">
+        <img class="app-icon" src="../../icon.webp" alt="" width="52" height="52">
+        <h1 class="titel">Tu es invité</h1>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Pages">
+    <a href="../">Accueil</a>
+    <a href="../support/">Aide</a>
+    <a href="../datenschutz/">Confidentialité</a>
+    <a href="../impressum/">Mentions légales</a>
+    <a class="sprache" href="../../einladung/" hreflang="de-CH" lang="de-CH">Deutsch</a>
+  </nav>
+
+  <main class="seite einladung">
+    <p class="einstieg">Quelqu’un t’attend à la table de jass. 🃏</p>
+
+    <div class="raumcode" id="raumcode" hidden>
+      <span class="raumcode-titel">Ton code de salon</span>
+      <strong class="raumcode-wert" id="code">-----</strong>
+      <button type="button" class="kontakt" id="kopieren">Copier le code</button>
+    </div>
+
+    <ol class="schritte einladung-schritte">
+      <li>
+        <strong>Télécharger l’app</strong>
+        <span class="text" id="laden-text">Pour iPhone et iPad dans l’App Store, pour Android en test sur Google Play. Gratuit, sans publicité, sans compte.</span>
+        <p class="store" id="ios">
+          <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Télécharger dans l’App Store"><img src="../../bilder/app-store-badge.svg" alt="Télécharger dans l’App Store" width="150" height="50"></a>
+        </p>
+        <a class="kontakt" id="android" href="../../test.html">Android : comment faire (en allemand)</a>
+      </li>
+      <li>
+        <strong>Ouvrir le jass en ligne</strong>
+        <span class="text">Dans le menu principal de l’app, touche <em>Jass en ligne</em>, puis <em>Rejoindre le salon</em>.</span>
+      </li>
+      <li>
+        <strong>Saisir le code et jouer</strong>
+        <span class="text">Saisis le code du salon (ou colle-le) – et te voilà à table.</span>
+      </li>
+    </ol>
+
+    <p class="zusatz">Tu n’as pas besoin de créer de compte ni d’utiliser ton vrai nom. Plus d’informations sur le jass en ligne et la protection des données dans la <a href="../datenschutz/">déclaration de confidentialité</a>.</p>
+  </main>
+
+  <footer>
+    © 2026 Michael Zihlmann · <a href="../">Accueil</a> · <a href="../support/">Aide</a> · <a href="../datenschutz/">Protection des données</a> · <a href="../impressum/">Mentions légales</a>
+  </footer>
+
+  <script>
+    (function () {
+      var code = (new URLSearchParams(location.search).get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 5);
+      if (code.length === 5) {
+        document.getElementById('code').textContent = code;
+        document.getElementById('raumcode').hidden = false;
+        var knopf = document.getElementById('kopieren');
+        knopf.addEventListener('click', function () {
+          var fertig = function () { knopf.textContent = 'Copié ✓'; setTimeout(function () { knopf.textContent = 'Copier le code'; }, 2000); };
+          if (navigator.clipboard) navigator.clipboard.writeText(code).then(fertig, function () {});
+        });
+      }
+      var ua = navigator.userAgent;
+      var android = /Android/i.test(ua);
+      var ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (android) document.getElementById('ios').hidden = true;
+      else if (ios) document.getElementById('android').hidden = true;
+    })();
+  </script>
+</body>
+</html>
