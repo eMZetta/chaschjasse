@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Einladung zum Jass – Chasch Jasse? Hesch Gäud?!</title>
+  <meta name="description" content="Jemand hat dich an einen Jasstisch eingeladen. Lade die App «Chasch Jasse? Hesch Gäud?!» und tritt mit dem Raumcode bei – gratis, ohne Konto.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2f5d4a">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chaschjasse.ch/einladung/">
+  <meta property="og:title" content="Komm an den Jasstisch! 🃏">
+  <meta property="og:description" content="Du wurdest zu einer Runde Jass eingeladen. Gratis, ohne Werbung, ohne Konto.">
+  <meta property="og:image" content="https://chaschjasse.ch/icon.png">
+  <meta property="og:locale" content="de_CH">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="kopf">
+    <div class="kopf-inhalt">
+      <picture class="logo">
+        <source media="(min-width: 600px)" srcset="../logo-quer.webp" width="1200" height="709">
+        <img src="../logo-hoch.webp" alt="Chasch Jasse? Hesch Gäud?!" width="840" height="714">
+      </picture>
+      <div class="titelzeile">
+        <img class="app-icon" src="../icon.webp" alt="" width="52" height="52">
+        <h1 class="titel">Du bist eingeladen</h1>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Seiten">
+    <a href="../">Start</a>
+    <a href="../support/">Support</a>
+    <a href="../datenschutz/">Datenschutz</a>
+    <a href="../impressum/">Impressum</a>
+  </nav>
+
+  <main class="seite einladung">
+    <p class="einstieg">Jemand wartet am Jasstisch auf dich. 🃏</p>
+
+    <div class="raumcode" id="raumcode" hidden>
+      <span class="raumcode-titel">Dein Raumcode</span>
+      <strong class="raumcode-wert" id="code">-----</strong>
+      <button type="button" class="kontakt" id="kopieren">Code kopieren</button>
+    </div>
+
+    <ol class="schritte einladung-schritte">
+      <li>
+        <strong>App laden</strong>
+        <span class="text" id="laden-text">Für iPhone und iPad im App Store, für Android als Test bei Google Play. Gratis, ohne Werbung, ohne Konto.</span>
+        <p class="store" id="ios">
+          <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="../bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
+        </p>
+        <a class="kontakt" id="android" href="../test.html">Android: so geht’s</a>
+      </li>
+      <li>
+        <strong>Online-Jass öffnen</strong>
+        <span class="text">Im Hauptmenü der App auf <em>Online-Jass</em> tippen, dann auf <em>Raum beitreten</em>.</span>
+      </li>
+      <li>
+        <strong>Code eingeben und mitspielen</strong>
+        <span class="text">Gib den Raumcode ein (oder füge ihn ein) – und schon sitzt du am Tisch.</span>
+      </li>
+    </ol>
+
+    <p class="zusatz">Du musst kein Konto anlegen und keinen echten Namen verwenden. Mehr zu Online-Jass und Datenschutz in der <a href="../datenschutz/">Datenschutzerklärung</a>.</p>
+  </main>
+
+  <footer>
+    © 2026 Michael Zihlmann · <a href="../">Start</a> · <a href="../support/">Support</a> · <a href="../datenschutz/">Datenschutzerklärung</a> · <a href="../impressum/">Impressum</a>
+  </footer>
+
+  <script>
+    (function () {
+      var code = (new URLSearchParams(location.search).get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 5);
+      if (code.length === 5) {
+        document.getElementById('code').textContent = code;
+        document.getElementById('raumcode').hidden = false;
+        var knopf = document.getElementById('kopieren');
+        knopf.addEventListener('click', function () {
+          var fertig = function () { knopf.textContent = 'Kopiert ✓'; setTimeout(function () { knopf.textContent = 'Code kopieren'; }, 2000); };
+          if (navigator.clipboard) navigator.clipboard.writeText(code).then(fertig, function () {});
+        });
+      }
+      var ua = navigator.userAgent;
+      var android = /Android/i.test(ua);
+      var ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (android) document.getElementById('ios').hidden = true;
+      else if (ios) document.getElementById('android').hidden = true;
+    })();
+  </script>
+</body>
+</html>
