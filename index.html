@@ -6,6 +6,13 @@
   <title>Chasch Jasse? Hesch Gäud?! – Schweizer Jass-App</title>
   <meta name="description" content="Schweizer Jass für iPhone, iPad und Android: Schieber, Coiffeur, Differenzler und viele weitere Varianten gegen den Computer oder online mit Freunden – ohne Werbung und ohne Konto.">
   <meta name="theme-color" content="#2f5d4a">
+  <link rel="canonical" href="https://chaschjasse.ch/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chaschjasse.ch/">
+  <meta property="og:title" content="Chasch Jasse? Hesch Gäud?! – Schweizer Jass-App">
+  <meta property="og:description" content="Schieber, Coiffeur, Differenzler und viele Varianten – gegen den Computer oder online mit Freunden. Gratis, ohne Werbung, ohne Konto.">
+  <meta property="og:image" content="https://chaschjasse.ch/icon.png">
+  <meta property="og:locale" content="de_CH">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Smart App Banner von Safari (iPhone/iPad): zeigt oben «Laden» bzw. «Öffnen», wenn die App installiert ist -->
@@ -13,7 +20,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="kopf">
+  <header class="kopf kopf-start">
     <div class="kopf-inhalt">
       <h1 class="logo-titel">
       <picture class="logo">
@@ -21,9 +28,6 @@
         <img src="logo-hoch.webp" alt="Chasch Jasse? Hesch Gäud?!" width="840" height="714">
       </picture>
       </h1>
-      <div class="titelzeile">
-        <img class="app-icon" src="icon.webp" alt="" width="52" height="52">
-      </div>
     </div>
   </header>
 
@@ -32,10 +36,10 @@
     <!-- <a class="spielen" href="spiel/">Im Browser spielen</a> -->
     <a href="support/">Support</a>
     <a href="datenschutz/">Datenschutz</a>
-    <a href="test.html">Android-Test</a>
+    <a href="impressum/">Impressum</a>
   </nav>
 
-  <main>
+  <main class="start">
     <!-- Nur auf Android: dort läuft noch der geschlossene Test über Google Play -->
     <div class="geraet-hinweis" id="android-test" hidden>
       <strong>Du hast ein Android-Handy?</strong>
@@ -43,12 +47,13 @@
       <a class="kontakt flyer" href="test.html">Jetzt testen</a>
     </div>
 
-    <!-- App Store: für alle gut sichtbar gleich oben -->
-    <p class="store">
-      <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
-    </p>
-
-    <p class="einstieg">Der Schweizer Jass für Smartphone und Tablet – gegen den Computer oder online mit deinen Freunden.</p>
+    <section class="hero">
+      <p class="einstieg">Der Schweizer Jass für Smartphone und Tablet – gegen den Computer oder online mit deinen Freunden.</p>
+      <p class="store">
+        <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
+      </p>
+      <p class="zusatz">Gratis · ohne Werbung · ohne Konto · für iPhone und iPad<br>Android: <a href="test.html">im Test bei Google Play</a></p>
+    </section>
 
     <div class="bildstreifen">
       <img src="bilder/hauptmenue.webp" alt="Hauptmenü in der Jassstube" width="180" height="320">
@@ -57,13 +62,23 @@
       <img src="bilder/spielarten.webp" alt="Auswahl der Spielarten" width="180" height="320" loading="lazy">
     </div>
 
-    <ul class="merkmale">
-      <li><strong>Viele Varianten:</strong> Schieber, Coiffeur, Differenzler, Bieter, Sidi Barrani, Molotow und mehr – mit deutschschweizer oder französischen Karten.</li>
-      <li><strong>Abenteuer «Das grosse Grau»:</strong> quer durch die Schweiz.</li>
-      <li><strong>Jass-Schule:</strong> die Regeln Schritt für Schritt lernen.</li>
-      <li><strong>Online-Jass:</strong> Tisch eröffnen, Raumcode teilen, zusammen spielen.</li>
-      <li><strong>Ohne Werbung, ohne Konto:</strong> alles ausser dem Online-Jass läuft auch im Flugmodus.</li>
+    <h2>Das steckt drin</h2>
+    <ul class="karten">
+      <li><span class="medaille" aria-hidden="true">🃏</span><strong>Viele Varianten</strong>Schieber, Coiffeur, Differenzler, Bieter, Sidi Barrani, Molotow, Quartett und mehr – mit deutschschweizer oder französischen Karten.</li>
+      <li><span class="medaille" aria-hidden="true">🏔️</span><strong>Abenteuer «Das grosse Grau»</strong>Quer durch die Schweiz: Orte besuchen, Leute treffen, Partien gewinnen.</li>
+      <li><span class="medaille" aria-hidden="true">🎓</span><strong>Jass-Schule</strong>Die Regeln Schritt für Schritt lernen, mit Tipps vom Alpöhi.</li>
+      <li><span class="medaille" aria-hidden="true">🌐</span><strong>Online-Jass</strong>Tisch eröffnen, Raumcode teilen, zusammen spielen – oder an einen offenen Tisch sitzen.</li>
+      <li><span class="medaille" aria-hidden="true">✈️</span><strong>Auch im Flugmodus</strong>Alles ausser dem Online-Jass läuft direkt auf deinem Gerät.</li>
+      <li><span class="medaille" aria-hidden="true">🤝</span><strong>Fair am Tisch</strong>Kein Chat, nur feste Sprüche. Namensfilter, Melden und Stummschalten schützen vor Ärger.</li>
     </ul>
+
+    <h2>Eine Person, ein Herz für den Jass</h2>
+    <p>
+      «Chasch Jasse? Hesch Gäud?!» entsteht in der Schweiz und wird von einer einzelnen Person gepflegt. Keine Werbung,
+      kein Tracking, keine versteckten Kosten. Wer mag, gibt im Abspann ein freiwilliges Trinkgeld – freigeschaltet wird damit
+      nichts. Fragen oder Ideen für eine neue Variante?
+      <a href="support/">Schreib mir.</a>
+    </p>
 
     <!-- TEMP (App Store Prüfung): Browser-Spiel ausgeblendet
     <h2>Im Browser spielen</h2>
@@ -74,18 +89,16 @@
     <p><a class="kontakt" href="spiel/">Jetzt im Browser spielen</a></p>
     -->
 
-    <h2>App laden</h2>
-    <p class="store">
-      <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
-    </p>
-    <p>
-      Für iPhone und iPad im App Store. Die Android-Version kommt bald bei Google Play, bis dahin kannst du sie
-      <a href="test.html">als Testerin oder Tester</a> ausprobieren.
-    </p>
+    <div class="schluss">
+      <p class="schluss-titel">Zeit für eine Runde?</p>
+      <p class="store">
+        <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Laden im App Store"><img src="bilder/app-store-badge.svg" alt="Laden im App Store" width="150" height="50"></a>
+      </p>
+    </div>
   </main>
 
   <footer>
-    © 2026 Michael Zihlmann · <a href="support/">Support</a> · <a href="datenschutz/">Datenschutzerklärung</a>
+    © 2026 Michael Zihlmann · <a href="support/">Support</a> · <a href="datenschutz/">Datenschutzerklärung</a> · <a href="impressum/">Impressum</a>
   </footer>
 
   <script>

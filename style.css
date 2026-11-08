@@ -464,3 +464,117 @@ footer a { color: var(--holz-hell); }
 .store { margin: 0 0 1.5em; }
 .store a { display: inline-block; line-height: 0; border-radius: 8px; }
 .store img { display: block; height: 50px; width: auto; }
+
+
+/* ---------- Auffrischung 8.11.2026: Startseite, Bewegung, Feinschliff ---------- */
+.kopf-start { padding-bottom: 30px; }
+
+/* Das Logo schwebt ganz leicht, wie ein frisch gemischter Fächer */
+@keyframes schweben { 0%, 100% { transform: translateY(0) rotate(-0.4deg); } 50% { transform: translateY(-6px) rotate(0.4deg); } }
+.kopf-start .logo { animation: schweben 7s ease-in-out infinite; }
+
+@keyframes aufdecken { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+main.start > .hero, main.start > .bildstreifen, main.start > h2, main.start > .karten, main.start > p, main.start > .schluss {
+  animation: aufdecken 0.6s ease-out both;
+}
+main.start > .bildstreifen { animation-delay: 0.1s; }
+main.start > h2 { animation-delay: 0.15s; }
+
+.hero { text-align: center; margin-bottom: 1.8em; }
+.hero .einstieg { font-size: clamp(1.15rem, 4.2vw, 1.45rem); text-wrap: balance; margin-bottom: 0.9em; }
+.hero .store { margin-bottom: 0.7em; }
+.hero .store img { height: 56px; margin: 0 auto; transition: transform 0.2s; }
+.hero .store a:hover img, .schluss .store a:hover img { transform: translateY(-2px) scale(1.03); }
+.zusatz { color: var(--tinte-leise); font-size: 0.92rem; margin: 0; }
+
+/* Bildstreifen: leicht gekippt wie hingelegte Karten, hebt sich beim Berühren */
+.start .bildstreifen { gap: 14px; margin: 0 0 2.2em; }
+.start .bildstreifen img { transition: transform 0.25s, box-shadow 0.25s; border: 2px solid var(--messing); }
+.start .bildstreifen img:nth-child(1) { transform: rotate(-2deg); }
+.start .bildstreifen img:nth-child(2) { transform: rotate(1.2deg) translateY(4px); }
+.start .bildstreifen img:nth-child(3) { transform: rotate(-1deg); }
+.start .bildstreifen img:nth-child(4) { transform: rotate(2deg) translateY(4px); }
+.start .bildstreifen img:hover { transform: rotate(0) translateY(-6px) scale(1.03); box-shadow: 0 10px 20px rgb(0 0 0 / 35%); }
+
+/* Kacheln mit Messing-Medaille */
+.karten { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 2em; }
+.karten li {
+  position: relative;
+  margin: 0;
+  padding: 16px 16px 16px 70px;
+  border: 1.5px solid var(--linie);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--papier) 70%, #fff 30%);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.karten li:hover { transform: translateY(-3px); border-color: var(--messing); box-shadow: 0 6px 14px rgb(0 0 0 / 18%); }
+.karten strong { display: block; font: 700 1.05rem/1.3 var(--font-titel); margin-bottom: 2px; }
+.medaille {
+  position: absolute; left: 14px; top: 16px;
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 1.35rem;
+  background: radial-gradient(circle at 35% 30%, #fff3c4, #e3b23c 60%, #b8842a);
+  box-shadow: 0 0 0 2px var(--kontur), 0 2px 4px rgb(0 0 0 / 35%);
+}
+.karten li:hover .medaille { animation: wippen 0.5s ease-in-out; }
+@keyframes wippen { 30% { transform: rotate(-12deg) scale(1.08); } 70% { transform: rotate(10deg) scale(1.08); } }
+@media (max-width: 600px) { .karten { grid-template-columns: 1fr; } }
+
+.schluss { text-align: center; margin-top: 2.2em; padding: 22px 16px 6px; border-top: 2px dashed var(--linie); }
+.schluss-titel { font: 700 1.5rem/1.2 var(--font-titel); margin-bottom: 0.6em; }
+.schluss .store { margin-bottom: 0; }
+.schluss .store img { margin: 0 auto; }
+
+/* Fokus sichtbar (Tastatur) und ruhige Bewegung für alle, die sie abgestellt haben */
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .start .bildstreifen img { transform: none !important; }
+}
+@media (prefers-color-scheme: dark) {
+  .karten li { background: color-mix(in srgb, var(--papier) 85%, #000 15%); }
+}
+
+
+/* ---------- Unterseiten im neuen Layout (Support, Datenschutz, Impressum, Test) ---------- */
+@keyframes einblenden { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+main.seite > * { animation: einblenden 0.5s ease-out both; }
+main.seite > :nth-child(2) { animation-delay: 0.05s; }
+main.seite > :nth-child(3) { animation-delay: 0.1s; }
+main.seite > :nth-child(n+4) { animation-delay: 0.15s; }
+
+/* Überschriften mit Messingstrich */
+main.seite h2 { padding-bottom: 0.25em; border-bottom: 2px solid var(--linie); position: relative; scroll-margin-top: 16px; }
+main.seite h2::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 56px; height: 2px; background: var(--messing); }
+
+/* Inhaltsverzeichnis */
+.inhalt { margin: 0 0 1.5em; padding: 14px 18px; border: 1.5px solid var(--linie); border-radius: 12px; background: color-mix(in srgb, var(--papier) 70%, #fff 30%); }
+.inhalt strong { font: 700 1.05rem var(--font-titel); }
+.inhalt ol { margin: 8px 0 0; padding-left: 1.4em; columns: 2; column-gap: 28px; font-size: 0.92rem; }
+.inhalt li { margin-bottom: 0.25em; break-inside: avoid; }
+@media (max-width: 600px) { .inhalt ol { columns: 1; } }
+html { scroll-behavior: smooth; }
+
+/* Kurzfassung als Karte mit Medaille-Streifen */
+main.seite .kurz { border-left-width: 6px; border-radius: 12px; box-shadow: 0 2px 8px rgb(0 0 0 / 12%); }
+
+/* Support: Kontaktkarte und Fragen als Karten */
+.kontaktkarte { position: relative; padding: 18px 18px 6px 78px; margin-bottom: 1.8em; border: 1.5px solid var(--messing); border-radius: 12px; background: color-mix(in srgb, var(--messing) 14%, transparent); }
+.kontaktkarte .medaille { left: 16px; top: 18px; }
+.kontaktkarte h2 { margin-top: 0; border: 0; padding: 0; }
+.kontaktkarte h2::after { display: none; }
+.kontaktkarte .hilfe { font-size: 0.92rem; color: var(--tinte-leise); }
+main.seite details { border: 1.5px solid var(--linie); border-radius: 12px; padding: 4px 16px; margin-bottom: 10px; background: color-mix(in srgb, var(--papier) 70%, #fff 30%); transition: border-color 0.2s, box-shadow 0.2s; }
+main.seite details:hover, main.seite details[open] { border-color: var(--messing); }
+main.seite details[open] { box-shadow: 0 4px 10px rgb(0 0 0 / 14%); }
+main.seite summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
+main.seite summary::-webkit-details-marker { display: none; }
+main.seite summary::after { content: '+'; flex: none; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--kontur); font-weight: 700; transition: transform 0.2s; }
+main.seite details[open] summary::after { content: '–'; transform: rotate(180deg); }
+main.seite details p { margin-bottom: 0.8em; }
+@media (prefers-color-scheme: dark) {
+  .inhalt, main.seite details { background: color-mix(in srgb, var(--papier) 85%, #000 15%); }
+}
+@media print { .inhalt { display: none; } }
