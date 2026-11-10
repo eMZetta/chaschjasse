@@ -39,14 +39,14 @@
     <a href="datenschutz/">Confidentialité</a>
     <a href="impressum/">Mentions légales</a>
     <a href="../trailer/">Trailer</a>
-    <a class="sprache" href="../" hreflang="de-CH" lang="de-CH">Deutsch</a>
+    <a class="sprache" href="../" hreflang="de-CH" lang="de-CH" title="Deutsch" aria-label="Deutsch"><svg class="flagge" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="5" fill="#d52b1e"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>DE</a>
   </nav>
 
   <main class="start">
     <div class="geraet-hinweis" id="android-test" hidden>
       <strong>Tu as un téléphone Android ?</strong>
       L’app est encore en phase de test sur Android – participe et joue dès maintenant.
-      <a class="kontakt flyer" href="../test.html">Tester maintenant (en allemand)</a>
+      <a class="kontakt flyer" href="test.html">Tester maintenant</a>
     </div>
 
     <section class="hero">
@@ -54,7 +54,7 @@
       <p class="store">
         <a href="https://apps.apple.com/ch/app/chasch-jasse/id6822740667" aria-label="Télécharger dans l’App Store"><img src="../bilder/app-store-badge.svg" alt="Télécharger dans l’App Store" width="150" height="50"></a>
       </p>
-      <p class="zusatz">Gratuit · sans publicité · sans compte · pour iPhone et iPad<br>Android : <a href="../test.html">en test sur Google Play</a></p>
+      <p class="zusatz">Gratuit · sans publicité · sans compte · pour iPhone et iPad<br>Android : <a href="test.html">en test sur Google Play</a></p>
     </section>
 
     <div class="bildstreifen">
@@ -95,7 +95,8 @@
   </footer>
 
   <script>
-    if (/Android/i.test(navigator.userAgent)) document.getElementById('android-test').hidden = false;
+    var ua = navigator.userAgent;
+    if (!(/iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1))) document.getElementById('android-test').hidden = false;
   </script>
 </body>
 </html>

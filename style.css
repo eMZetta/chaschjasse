@@ -599,4 +599,5 @@ main.seite h3 { font: 700 1.15rem/1.3 var(--font-titel); margin: 1.4em 0 0.4em; 
 .einladung-schritte .kontakt { max-width: 320px; margin-top: 10px; }
 
 /* Sprachumschalter (Deutsch/Français) rechts in der Navigation */
-nav a.sprache { margin-left: auto; }
+nav a.sprache { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; letter-spacing: 0.04em; }
+nav a.sprache .flagge { width: 20px; height: 20px; flex: none; border-radius: 4px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25); }

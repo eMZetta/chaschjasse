@@ -40,11 +40,11 @@
     <a href="support/">Support</a>
     <a href="datenschutz/">Datenschutz</a>
     <a href="impressum/">Impressum</a>
-    <a class="sprache" href="fr/" hreflang="fr-CH" lang="fr-CH">Français</a>
+    <a class="sprache" href="fr/" hreflang="fr-CH" lang="fr-CH" title="Français" aria-label="Français"><svg class="flagge" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="5" fill="#d52b1e"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>FR</a>
   </nav>
 
   <main class="start">
-    <!-- Nur auf Android: dort läuft noch der geschlossene Test über Google Play -->
+    <!-- Android-Test: überall ausser auf iPhone/iPad (dort ist die App im App Store) -->
     <div class="geraet-hinweis" id="android-test" hidden>
       <strong>Du hast ein Android-Handy?</strong>
       Die App ist für Android noch im Test – mach mit und spiel schon jetzt.
@@ -106,7 +106,8 @@
   </footer>
 
   <script>
-    if (/Android/i.test(navigator.userAgent)) document.getElementById('android-test').hidden = false;
+    var ua = navigator.userAgent;
+    if (!(/iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1))) document.getElementById('android-test').hidden = false;
 
   </script>
 </body>
