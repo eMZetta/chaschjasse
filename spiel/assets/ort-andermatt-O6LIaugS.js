@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-andermatt-DiWOTVAX.webp`;export{e as default};

@@ -1,0 +1,1 @@
+import{F as e,dt as t}from"./index-CA70VnJu.js";import{s as n}from"./uiSounds-Dq7xpHmu.js";function r(){let r=t(!1),i=0;function a(){n(),r.value=!1,clearTimeout(i),requestAnimationFrame(()=>{r.value=!0,i=setTimeout(()=>r.value=!1,260)})}return e(()=>clearTimeout(i)),{released:r,release:a}}export{r as t};

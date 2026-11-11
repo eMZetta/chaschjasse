@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-neuhausen-KU0K2HiX.webp`;export{e as default};

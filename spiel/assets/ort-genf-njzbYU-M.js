@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-genf-evRPCZ-b.webp`;export{e as default};

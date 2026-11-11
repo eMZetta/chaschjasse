@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-stgallen-Cgaecdo3.webp`;export{e as default};

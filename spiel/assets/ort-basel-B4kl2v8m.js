@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-basel-ceOJwdwl.webp`;export{e as default};

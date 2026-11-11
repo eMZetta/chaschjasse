@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-B8GsYef3.js","assets/dist-BJ0NcCcm.js"])))=>i.map(i=>d[i]);
+import{r as e}from"./dist-BJ0NcCcm.js";import{t}from"./preload-helper-BloyoWPW.js";var n=e(`App`,{web:()=>t(()=>import(`./web-B8GsYef3.js`).then(e=>new e.AppWeb),__vite__mapDeps([0,1]))});export{n as App};

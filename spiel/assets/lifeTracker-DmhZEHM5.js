@@ -1,1 +1,0 @@
-function e(e,t,n,r){let i=new Set;for(let a of e)if(n.has(a))r.add(a),i.add(a);else{let e=(t.get(a)??0)-1;t.set(a,e),e<=0&&n.add(a)}return i}export{e as t};

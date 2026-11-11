@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-murten-Cki69Eyh.webp`;export{e as default};

@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-visp-CjRE-wBq.webp`;export{e as default};

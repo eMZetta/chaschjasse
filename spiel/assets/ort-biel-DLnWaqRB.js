@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-biel-DiFDk7cA.webp`;export{e as default};

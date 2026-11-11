@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-eth-CRqxE9ip.webp`;export{e as default};

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Jass-Allrounder" (alle Jassarten gewonnen): goldene Rosette mit Rosen, Schellen, Schilten und Eicheln rundherum -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.45" stop-color="#e6b23a"/>
+      <stop offset="1" stop-color="#8a5a12"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2f7a46"/>
+      <stop offset="1" stop-color="#123b22"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf5"/>
+      <stop offset="1" stop-color="#ebe0c6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.55" stop-color="#d79a22"/>
+      <stop offset="1" stop-color="#9a6510"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2452f"/>
+      <stop offset="1" stop-color="#9c2414"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+
+  <!-- Rosette -->
+  <polygon points="128,92 136.4,107.7 153.5,102.5 148.3,119.6 164,128 148.3,136.4 153.5,153.5 136.4,148.3 128,164 119.6,148.3 102.5,153.5 107.7,136.4 92,128 107.7,119.6 102.5,102.5 119.6,107.7" fill="url(#gold)" stroke="#5a3a0c" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="128" cy="128" r="14" fill="url(#ribbon)" stroke="#5a1408" stroke-width="2.5"/>
+  <polygon points="128,120 130.1,125.2 135.6,125.5 131.3,129.1 132.7,134.5 128,131.5 123.3,134.5 124.7,129.1 120.4,125.5 125.9,125.2" fill="#fff3d0"/>
+
+  <!-- vier Farben rundherum -->
+  <g stroke="#5b4628" stroke-width="2.5">
+    <circle cx="128" cy="66" r="23" fill="url(#card)"/>
+    <circle cx="190" cy="128" r="23" fill="url(#card)"/>
+    <circle cx="128" cy="190" r="23" fill="url(#card)"/>
+    <circle cx="66" cy="128" r="23" fill="url(#card)"/>
+  </g>
+
+  <!-- Rosen (oben) -->
+  <g transform="translate(128 66)" stroke="#7a1a0e" stroke-width="2">
+    <circle cx="0" cy="-8" r="7" fill="#c8331f"/>
+    <circle cx="7.6" cy="-2.5" r="7" fill="#c8331f"/>
+    <circle cx="4.7" cy="6.5" r="7" fill="#c8331f"/>
+    <circle cx="-4.7" cy="6.5" r="7" fill="#c8331f"/>
+    <circle cx="-7.6" cy="-2.5" r="7" fill="#c8331f"/>
+    <circle cx="0" cy="0" r="5" fill="#ffd34d" stroke="#9a6510"/>
+  </g>
+
+  <!-- Schellen (rechts) -->
+  <g transform="translate(190 128)">
+    <rect x="-3" y="-17" width="6" height="6" rx="2" fill="#9a6510"/>
+    <circle cx="0" cy="0" r="13" fill="url(#gold)" stroke="#5a3a0c" stroke-width="2.5"/>
+    <path d="M-12 -3 H12" stroke="#5a3a0c" stroke-width="2"/>
+    <path d="M-6 5 H6" stroke="#3a2406" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-6" cy="5" r="2.5" fill="#3a2406"/>
+    <circle cx="6" cy="5" r="2.5" fill="#3a2406"/>
+  </g>
+
+  <!-- Schilten (unten) -->
+  <g transform="translate(128 189)" stroke-linejoin="round">
+    <path d="M-13 -15 H13 V0 C13 9 7 14 0 17 C-7 14 -13 9 -13 0 Z" fill="#2a2a2a"/>
+    <path d="M-13 -15 H13 V0 H-13 Z" fill="#d79a22"/>
+    <path d="M-13 -15 H13 V0 C13 9 7 14 0 17 C-7 14 -13 9 -13 0 Z" fill="none" stroke="#2a2a2a" stroke-width="2.5"/>
+  </g>
+
+  <!-- Eicheln (links) -->
+  <g transform="translate(66 128)" stroke-linejoin="round">
+    <ellipse cx="0" cy="4" rx="9" ry="12" fill="#8a5a2b" stroke="#3a2406" stroke-width="2.5"/>
+    <path d="M-12 -2 C-12 -12 12 -12 12 -2 Z" fill="#2f7a46" stroke="#123b22" stroke-width="2.5"/>
+    <path d="M0 -10 V-16" stroke="#123b22" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Glanz auf dem Rand -->
+  <path d="M40 98 A95 95 0 0 1 112 30" fill="none" stroke="#fff8d6" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

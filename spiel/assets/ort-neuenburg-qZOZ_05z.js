@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-neuenburg-B5LhUyeW.webp`;export{e as default};

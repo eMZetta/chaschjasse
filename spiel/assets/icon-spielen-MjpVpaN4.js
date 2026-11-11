@@ -1,1 +1,0 @@
-var e=`/spiel/assets/icon-spielen-DeqXZBUy.webp`;export{e as t};

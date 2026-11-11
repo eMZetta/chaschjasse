@@ -1,0 +1,1 @@
+var e=`/spiel/assets/icon-school-D1sL4Zjb.webp`;export{e as t};

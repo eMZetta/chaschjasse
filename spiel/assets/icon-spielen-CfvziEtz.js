@@ -1,0 +1,1 @@
+var e=`/spiel/assets/icon-spielen-BQ3Nkc1T.webp`;export{e as t};

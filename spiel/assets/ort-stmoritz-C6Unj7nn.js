@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-stmoritz-DGB3MD6R.webp`;export{e as default};

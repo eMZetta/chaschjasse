@@ -1,0 +1,1 @@
+var e={stmoritz:`GR`,andermatt:`UR`,einsiedeln:`LU`,eth:`ZH`,basel:`BS`,biel:`BE`,neuenburg:`NE`,genf:`GE`,bern:`BE`,stgallen:`SG`,lugano:`TI`,visp:`VS`,neuhausen:`SH`,luzern:`LU`,murten:`FR`},t=t=>e[t]||null;export{t};

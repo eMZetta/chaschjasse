@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-bern-UY6xKDeg.webp`;export{e as default};

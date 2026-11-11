@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-einsiedeln-CeDPCrOE.webp`;export{e as default};

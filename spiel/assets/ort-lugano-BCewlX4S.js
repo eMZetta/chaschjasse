@@ -1,0 +1,1 @@
+var e=`/spiel/assets/ort-lugano-BhV4A4rs.webp`;export{e as default};
