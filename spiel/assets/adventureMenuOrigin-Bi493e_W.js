@@ -1,1 +1,0 @@
-import{dt as e,h as t,s as n}from"./index-CA70VnJu.js";var r=e(`map`);function i(e){r.value=e===`reisebuch`?`reisebuch`:`map`}function a(){let e=t(()=>r.value===`reisebuch`);return{backRoute:t(()=>({name:e.value?`adventure-hub`:`map`})),backLabel:t(()=>e.value?n(`Zurück zum Reisebuch`):n(`Zurück zur Karte`))}}export{a as n,i as t};

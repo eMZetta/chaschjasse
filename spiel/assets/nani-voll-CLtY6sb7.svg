@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Erfolg "Alle am Platz" (Alleine / Zeitvertreib) -->
+  <defs>
+    <radialGradient id="rim" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#fff1b0"/><stop offset="0.45" stop-color="#e6b23a"/><stop offset="1" stop-color="#8a5a12"/></radialGradient>
+    <radialGradient id="felt" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#2f7a46"/><stop offset="1" stop-color="#123b22"/></radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf5"/><stop offset="1" stop-color="#ebe0c6"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="0.55" stop-color="#d79a22"/><stop offset="1" stop-color="#9a6510"/></linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="122" fill="#5a3a0c"/>
+  <circle cx="128" cy="128" r="117" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="98" fill="#6b4512"/>
+  <circle cx="128" cy="128" r="95" fill="url(#felt)"/>
+  <g transform="translate(84.0 84.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><circle r="11.0" fill="#e8443a" stroke="#3a2410" stroke-width="2.5"/></g></g>
+  <g transform="translate(128.0 84.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><polygon points="-0.0,-13.0 3.2,-4.4 12.4,-4.0 5.2,1.7 7.6,10.5 0.0,5.5 -7.6,10.5 -5.2,1.7 -12.4,-4.0 -3.2,-4.4" fill="#f2c230" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round"/></g></g>
+  <g transform="translate(172.0 84.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><path d="M0 -14.0 L11.0 0 L0 14.0 L-11.0 0Z" fill="#3f8fd8" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round"/></g></g>
+  <g transform="translate(84.0 138.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><path d="M0 -13.0 Q14.0 -2.0 0 13.0 Q-14.0 -2.0 0 -13.0Z" fill="#e8443a" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round"/></g></g>
+  <g transform="translate(128.0 138.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><circle r="11.0" fill="#f2c230" stroke="#3a2410" stroke-width="2.5"/></g></g>
+  <g transform="translate(172.0 138.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><polygon points="-0.0,-13.0 3.2,-4.4 12.4,-4.0 5.2,1.7 7.6,10.5 0.0,5.5 -7.6,10.5 -5.2,1.7 -12.4,-4.0 -3.2,-4.4" fill="#3f8fd8" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round"/></g></g>
+  <g transform="translate(84.0 192.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><path d="M0 -14.0 L11.0 0 L0 14.0 L-11.0 0Z" fill="#e8443a" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round"/></g></g>
+  <g transform="translate(128.0 192.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><path d="M0 -13.0 Q14.0 -2.0 0 13.0 Q-14.0 -2.0 0 -13.0Z" fill="#f2c230" stroke="#3a2410" stroke-width="2.5" stroke-linejoin="round"/></g></g>
+  <g transform="translate(172.0 192.0) rotate(0)" opacity="1.0"><rect x="-19.0" y="-24.0" width="38" height="48" rx="5" fill="url(#card)" stroke="#3a2410" stroke-width="2.6"/><g transform="scale(0.58)"><circle r="11.0" fill="#3f8fd8" stroke="#3a2410" stroke-width="2.5"/></g></g>
+  
+</svg>

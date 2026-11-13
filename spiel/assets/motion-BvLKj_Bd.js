@@ -1,0 +1,1 @@
+import{r as e}from"./effects-Iz8BpxfZ.js";function t(){return e().calm}export{t};

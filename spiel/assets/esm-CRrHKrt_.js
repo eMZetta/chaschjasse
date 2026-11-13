@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-C4Pam-Mp.js","assets/dist-BJ0NcCcm.js"])))=>i.map(i=>d[i]);
+import{r as e}from"./dist-BJ0NcCcm.js";import{t}from"./preload-helper-BloyoWPW.js";var n=e(`InAppReview`,{web:()=>t(()=>import(`./web-C4Pam-Mp.js`).then(e=>new e.InAppReviewWeb),__vite__mapDeps([0,1]))});export{n as InAppReview};

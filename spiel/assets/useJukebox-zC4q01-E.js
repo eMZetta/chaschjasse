@@ -1,0 +1,1 @@
+import{ft as e}from"./index-Bk-XF-hi.js";var t=e(!1);function n(){t.value=!0}function r(){t.value=!1}export{t as n,n as r,r as t};

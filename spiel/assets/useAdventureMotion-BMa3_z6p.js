@@ -1,1 +1,0 @@
-import{F as e}from"./index-CA70VnJu.js";import{c as t}from"./imagePreload-VB7Obchn.js";function n(){let n=t();n.setInAdventure(!0),e(()=>n.setInAdventure(!1))}export{n as t};

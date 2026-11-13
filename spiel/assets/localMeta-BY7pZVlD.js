@@ -1,0 +1,1 @@
+import{o as e,r as t,t as n}from"./roster-GWWNwf5W.js";import{t as r}from"./seats-Ccmdz872.js";import{t as i}from"./regions-uXmo_ClB.js";function a(){return{async listRegions(){return i.map(e=>({...e}))},async listPersonalities(){return e.map(t)},async rollPersonalities(){return{seats:n.roll(r).toDto()}}}}var o=a();export{o as default};

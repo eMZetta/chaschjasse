@@ -1,1 +1,0 @@
-import{c as e}from"./imagePreload-VB7Obchn.js";function t(){return e().calm}export{t};

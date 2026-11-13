@@ -1,0 +1,1 @@
+import{I as e}from"./index-Bk-XF-hi.js";import{r as t}from"./effects-Iz8BpxfZ.js";function n(){let n=t();n.setInAdventure(!0),e(()=>n.setInAdventure(!1))}export{n as t};

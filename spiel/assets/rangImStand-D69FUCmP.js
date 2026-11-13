@@ -1,0 +1,1 @@
+import{s as e}from"./index-Bk-XF-hi.js";function t(e,t){let n=(e||[]).map(e=>[e,Number(t(e))||0]),r={};if(n.length<2||n.every(([,e])=>e===n[0][1])){for(let[e]of n)r[e]=null;return r}for(let[e,t]of n)r[e]=1+n.filter(([,e])=>e>t).length;return r}var n=t=>t?`${t===1?e(`1.`):e(`{p1}.`,{p1:t})} · `:``;export{n,t};
